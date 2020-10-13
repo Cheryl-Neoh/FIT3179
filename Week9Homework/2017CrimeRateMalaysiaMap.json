@@ -2,6 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "width": 800,
   "height": 600,
+  "title": "Crime rates around Malaysia at the year of 2017",
   "data": {
     "url": "https://cheryl-neoh.github.io/FIT3179/Week9Homework/Malaysian-states.json",
     "format": {
