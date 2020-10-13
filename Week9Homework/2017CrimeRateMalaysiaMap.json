@@ -1,0 +1,58 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "width": 800,
+  "height": 600,
+  "data": {
+    "url": "https://cheryl-neoh.github.io/FIT3179/Week9Homework/Malaysian-states.json",
+    "format": {
+      "type": "topojson",
+      "feature": "states"
+    }
+  },
+  "transform": [
+    {
+      "lookup": "id",
+      "from": {
+        "data": {
+          "url": "https://cheryl-neoh.github.io/FIT3179/Week9Homework/2017-Totalcrimes.csv"
+        },
+        "key": "id",
+        "fields": [
+          "Rate per 100,000 people",
+          "Year",
+          "Total cases"
+        ]
+      }
+    }
+  ],
+  "projection": {
+    "type": "mercator"
+  },
+  "mark": "geoshape",
+  "encoding": {
+    "color": {
+      "field": "Rate per 100,000 people",
+      "type": "quantitative"
+    },
+    "tooltip": [
+      {
+        "field": "id",
+        "type": "nominal",
+        "title": "Country"
+      },
+      {
+        "field": "Rate per 100,000 people",
+        "type": "quantitative"
+      },
+      {
+        "field": "Total cases",
+        "type": "quantitative"
+      },
+      {
+        "field": "Year",
+        "type": "quantitative"
+      }
+    ]
+  },
+  "config": {}
+}
