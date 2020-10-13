@@ -1,4 +1,4 @@
-﻿Type of crime,id,Year,Number of cases,"Rate per 100,000 people"
+﻿"Type of crime","id","Year","Number of cases","Rate per 100,000 people"
 Murder,Johor,2017,66,1.75
 Rape,Johor,2017,196,5.2
 Armed Group Robbery,Johor,2017,1,0.03
