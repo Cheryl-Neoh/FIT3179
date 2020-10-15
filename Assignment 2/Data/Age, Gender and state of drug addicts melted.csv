@@ -1,0 +1,925 @@
+Year,id,Gender,Age,Number of Drug addicts
+2017,Johor,L,19,48.0
+2017,Johor,P,19,3.0
+2017,Kedah,L,19,93.0
+2017,Kedah,P,19,6.0
+2017,Kelantan,L,19,104.0
+2017,Kelantan,P,19,1.0
+2017,Melaka,L,19,17.0
+2017,Melaka,P,19,2.0
+2017,Negeri Sembilan,L,19,33.0
+2017,Negeri Sembilan,P,19,3.0
+2017,Pahang,L,19,42.0
+2017,Pahang,P,19,4.0
+2017,Perak,L,19,38.0
+2017,Perak,P,19,2.0
+2017,Perlis,L,19,32.0
+2017,Perlis,P,19,0.0
+2017,Pulau Pinang,L,19,66.0
+2017,Pulau Pinang,P,19,5.0
+2017,Sabah,L,19,32.0
+2017,Sabah,P,19,0.0
+2017,Sarawak,L,19,10.0
+2017,Sarawak,P,19,1.0
+2017,Selangor,L,19,51.0
+2017,Selangor,P,19,2.0
+2017,Terengganu,L,19,44.0
+2017,Terengganu,P,19,1.0
+2017,Kuala Lumpur,L,19,37.0
+2017,Kuala Lumpur,P,19,1.0
+2018,Johor,L,19,0.0
+2018,Johor,P,19,0.0
+2018,Kedah,L,19,14.0
+2018,Kedah,P,19,0.0
+2018,Kelantan,L,19,7.0
+2018,Kelantan,P,19,0.0
+2018,Melaka,L,19,0.0
+2018,Melaka,P,19,0.0
+2018,Negeri Sembilan,L,19,1.0
+2018,Negeri Sembilan,P,19,0.0
+2018,Pahang,L,19,0.0
+2018,Pahang,P,19,0.0
+2018,Perak,L,19,2.0
+2018,Perak,P,19,0.0
+2018,Perlis,L,19,3.0
+2018,Perlis,P,19,0.0
+2018,Pulau Pinang,L,19,2.0
+2018,Pulau Pinang,P,19,0.0
+2018,Sabah,L,19,1.0
+2018,Sabah,P,19,1.0
+2018,Sarawak,L,19,2.0
+2018,Sarawak,P,19,1.0
+2018,Selangor,L,19,2.0
+2018,Selangor,P,19,0.0
+2018,Terengganu,L,19,2.0
+2018,Terengganu,P,19,0.0
+2018,Kuala Lumpur,L,19,4.0
+2018,Kuala Lumpur,P,19,0.0
+2019,Johor,L,19,1.0
+2019,Johor,P,19,0.0
+2019,Kedah,L,19,4.0
+2019,Kedah,P,19,0.0
+2019,Kelantan,L,19,5.0
+2019,Kelantan,P,19,0.0
+2019,Melaka,L,19,0.0
+2019,Melaka,P,19,0.0
+2019,Negeri Sembilan,L,19,0.0
+2019,Negeri Sembilan,P,19,0.0
+2019,Pahang,L,19,0.0
+2019,Pahang,P,19,0.0
+2019,Perak,L,19,2.0
+2019,Perak,P,19,0.0
+2019,Perlis,L,19,1.0
+2019,Perlis,P,19,0.0
+2019,Pulau Pinang,L,19,0.0
+2019,Pulau Pinang,P,19,0.0
+2019,Sabah,L,19,1.0
+2019,Sabah,P,19,0.0
+2019,Sarawak,L,19,0.0
+2019,Sarawak,P,19,0.0
+2019,Selangor,L,19,2.0
+2019,Selangor,P,19,1.0
+2019,Terengganu,L,19,6.0
+2019,Terengganu,P,19,0.0
+2019,Kuala Lumpur,L,19,3.0
+2019,Kuala Lumpur,P,19,0.0
+2017,Johor,L,20-24,368.0
+2017,Johor,P,20-24,27.0
+2017,Kedah,L,20-24,590.0
+2017,Kedah,P,20-24,19.0
+2017,Kelantan,L,20-24,689.0
+2017,Kelantan,P,20-24,14.0
+2017,Melaka,L,20-24,137.0
+2017,Melaka,P,20-24,4.0
+2017,Negeri Sembilan,L,20-24,194.0
+2017,Negeri Sembilan,P,20-24,10.0
+2017,Pahang,L,20-24,338.0
+2017,Pahang,P,20-24,19.0
+2017,Perak,L,20-24,235.0
+2017,Perak,P,20-24,12.0
+2017,Perlis,L,20-24,153.0
+2017,Perlis,P,20-24,4.0
+2017,Pulau Pinang,L,20-24,489.0
+2017,Pulau Pinang,P,20-24,29.0
+2017,Sabah,L,20-24,220.0
+2017,Sabah,P,20-24,11.0
+2017,Sarawak,L,20-24,116.0
+2017,Sarawak,P,20-24,10.0
+2017,Selangor,L,20-24,400.0
+2017,Selangor,P,20-24,26.0
+2017,Terengganu,L,20-24,343.0
+2017,Terengganu,P,20-24,12.0
+2017,Kuala Lumpur,L,20-24,219.0
+2017,Kuala Lumpur,P,20-24,18.0
+2018,Johor,L,20-24,10.0
+2018,Johor,P,20-24,1.0
+2018,Kedah,L,20-24,30.0
+2018,Kedah,P,20-24,5.0
+2018,Kelantan,L,20-24,36.0
+2018,Kelantan,P,20-24,1.0
+2018,Melaka,L,20-24,1.0
+2018,Melaka,P,20-24,1.0
+2018,Negeri Sembilan,L,20-24,6.0
+2018,Negeri Sembilan,P,20-24,1.0
+2018,Pahang,L,20-24,3.0
+2018,Pahang,P,20-24,1.0
+2018,Perak,L,20-24,11.0
+2018,Perak,P,20-24,0.0
+2018,Perlis,L,20-24,9.0
+2018,Perlis,P,20-24,1.0
+2018,Pulau Pinang,L,20-24,9.0
+2018,Pulau Pinang,P,20-24,1.0
+2018,Sabah,L,20-24,3.0
+2018,Sabah,P,20-24,1.0
+2018,Sarawak,L,20-24,11.0
+2018,Sarawak,P,20-24,1.0
+2018,Selangor,L,20-24,29.0
+2018,Selangor,P,20-24,4.0
+2018,Terengganu,L,20-24,16.0
+2018,Terengganu,P,20-24,3.0
+2018,Kuala Lumpur,L,20-24,14.0
+2018,Kuala Lumpur,P,20-24,2.0
+2019,Johor,L,20-24,7.0
+2019,Johor,P,20-24,0.0
+2019,Kedah,L,20-24,28.0
+2019,Kedah,P,20-24,2.0
+2019,Kelantan,L,20-24,21.0
+2019,Kelantan,P,20-24,1.0
+2019,Melaka,L,20-24,0.0
+2019,Melaka,P,20-24,0.0
+2019,Negeri Sembilan,L,20-24,3.0
+2019,Negeri Sembilan,P,20-24,0.0
+2019,Pahang,L,20-24,4.0
+2019,Pahang,P,20-24,0.0
+2019,Perak,L,20-24,5.0
+2019,Perak,P,20-24,1.0
+2019,Perlis,L,20-24,2.0
+2019,Perlis,P,20-24,0.0
+2019,Pulau Pinang,L,20-24,1.0
+2019,Pulau Pinang,P,20-24,0.0
+2019,Sabah,L,20-24,7.0
+2019,Sabah,P,20-24,4.0
+2019,Sarawak,L,20-24,3.0
+2019,Sarawak,P,20-24,0.0
+2019,Selangor,L,20-24,10.0
+2019,Selangor,P,20-24,1.0
+2019,Terengganu,L,20-24,9.0
+2019,Terengganu,P,20-24,1.0
+2019,Kuala Lumpur,L,20-24,13.0
+2019,Kuala Lumpur,P,20-24,2.0
+2017,Johor,L,25-29,397.0
+2017,Johor,P,25-29,35.0
+2017,Kedah,L,25-29,533.0
+2017,Kedah,P,25-29,14.0
+2017,Kelantan,L,25-29,785.0
+2017,Kelantan,P,25-29,13.0
+2017,Melaka,L,25-29,99.0
+2017,Melaka,P,25-29,7.0
+2017,Negeri Sembilan,L,25-29,155.0
+2017,Negeri Sembilan,P,25-29,12.0
+2017,Pahang,L,25-29,344.0
+2017,Pahang,P,25-29,20.0
+2017,Perak,L,25-29,272.0
+2017,Perak,P,25-29,6.0
+2017,Perlis,L,25-29,125.0
+2017,Perlis,P,25-29,6.0
+2017,Pulau Pinang,L,25-29,478.0
+2017,Pulau Pinang,P,25-29,36.0
+2017,Sabah,L,25-29,227.0
+2017,Sabah,P,25-29,10.0
+2017,Sarawak,L,25-29,112.0
+2017,Sarawak,P,25-29,3.0
+2017,Selangor,L,25-29,358.0
+2017,Selangor,P,25-29,36.0
+2017,Terengganu,L,25-29,415.0
+2017,Terengganu,P,25-29,13.0
+2017,Kuala Lumpur,L,25-29,202.0
+2017,Kuala Lumpur,P,25-29,22.0
+2018,Johor,L,25-29,20.0
+2018,Johor,P,25-29,2.0
+2018,Kedah,L,25-29,37.0
+2018,Kedah,P,25-29,2.0
+2018,Kelantan,L,25-29,48.0
+2018,Kelantan,P,25-29,1.0
+2018,Melaka,L,25-29,6.0
+2018,Melaka,P,25-29,0.0
+2018,Negeri Sembilan,L,25-29,8.0
+2018,Negeri Sembilan,P,25-29,0.0
+2018,Pahang,L,25-29,11.0
+2018,Pahang,P,25-29,3.0
+2018,Perak,L,25-29,7.0
+2018,Perak,P,25-29,5.0
+2018,Perlis,L,25-29,14.0
+2018,Perlis,P,25-29,0.0
+2018,Pulau Pinang,L,25-29,13.0
+2018,Pulau Pinang,P,25-29,1.0
+2018,Sabah,L,25-29,19.0
+2018,Sabah,P,25-29,3.0
+2018,Sarawak,L,25-29,8.0
+2018,Sarawak,P,25-29,1.0
+2018,Selangor,L,25-29,29.0
+2018,Selangor,P,25-29,1.0
+2018,Terengganu,L,25-29,22.0
+2018,Terengganu,P,25-29,5.0
+2018,Kuala Lumpur,L,25-29,30.0
+2018,Kuala Lumpur,P,25-29,1.0
+2019,Johor,L,25-29,24.0
+2019,Johor,P,25-29,4.0
+2019,Kedah,L,25-29,34.0
+2019,Kedah,P,25-29,3.0
+2019,Kelantan,L,25-29,26.0
+2019,Kelantan,P,25-29,0.0
+2019,Melaka,L,25-29,0.0
+2019,Melaka,P,25-29,1.0
+2019,Negeri Sembilan,L,25-29,7.0
+2019,Negeri Sembilan,P,25-29,1.0
+2019,Pahang,L,25-29,15.0
+2019,Pahang,P,25-29,2.0
+2019,Perak,L,25-29,25.0
+2019,Perak,P,25-29,2.0
+2019,Perlis,L,25-29,6.0
+2019,Perlis,P,25-29,0.0
+2019,Pulau Pinang,L,25-29,15.0
+2019,Pulau Pinang,P,25-29,1.0
+2019,Sabah,L,25-29,19.0
+2019,Sabah,P,25-29,0.0
+2019,Sarawak,L,25-29,12.0
+2019,Sarawak,P,25-29,1.0
+2019,Selangor,L,25-29,31.0
+2019,Selangor,P,25-29,3.0
+2019,Terengganu,L,25-29,34.0
+2019,Terengganu,P,25-29,1.0
+2019,Kuala Lumpur,L,25-29,17.0
+2019,Kuala Lumpur,P,25-29,2.0
+2017,Johor,L,30-34,394.0
+2017,Johor,P,30-34,22.0
+2017,Kedah,L,30-34,444.0
+2017,Kedah,P,30-34,20.0
+2017,Kelantan,L,30-34,782.0
+2017,Kelantan,P,30-34,9.0
+2017,Melaka,L,30-34,99.0
+2017,Melaka,P,30-34,6.0
+2017,Negeri Sembilan,L,30-34,183.0
+2017,Negeri Sembilan,P,30-34,9.0
+2017,Pahang,L,30-34,376.0
+2017,Pahang,P,30-34,21.0
+2017,Perak,L,30-34,277.0
+2017,Perak,P,30-34,9.0
+2017,Perlis,L,30-34,124.0
+2017,Perlis,P,30-34,7.0
+2017,Pulau Pinang,L,30-34,568.0
+2017,Pulau Pinang,P,30-34,25.0
+2017,Sabah,L,30-34,239.0
+2017,Sabah,P,30-34,11.0
+2017,Sarawak,L,30-34,80.0
+2017,Sarawak,P,30-34,6.0
+2017,Selangor,L,30-34,429.0
+2017,Selangor,P,30-34,28.0
+2017,Terengganu,L,30-34,391.0
+2017,Terengganu,P,30-34,13.0
+2017,Kuala Lumpur,L,30-34,233.0
+2017,Kuala Lumpur,P,30-34,15.0
+2018,Johor,L,30-34,48.0
+2018,Johor,P,30-34,6.0
+2018,Kedah,L,30-34,61.0
+2018,Kedah,P,30-34,0.0
+2018,Kelantan,L,30-34,87.0
+2018,Kelantan,P,30-34,1.0
+2018,Melaka,L,30-34,12.0
+2018,Melaka,P,30-34,0.0
+2018,Negeri Sembilan,L,30-34,28.0
+2018,Negeri Sembilan,P,30-34,1.0
+2018,Pahang,L,30-34,56.0
+2018,Pahang,P,30-34,4.0
+2018,Perak,L,30-34,37.0
+2018,Perak,P,30-34,5.0
+2018,Perlis,L,30-34,25.0
+2018,Perlis,P,30-34,1.0
+2018,Pulau Pinang,L,30-34,37.0
+2018,Pulau Pinang,P,30-34,1.0
+2018,Sabah,L,30-34,25.0
+2018,Sabah,P,30-34,3.0
+2018,Sarawak,L,30-34,27.0
+2018,Sarawak,P,30-34,3.0
+2018,Selangor,L,30-34,39.0
+2018,Selangor,P,30-34,1.0
+2018,Terengganu,L,30-34,39.0
+2018,Terengganu,P,30-34,3.0
+2018,Kuala Lumpur,L,30-34,34.0
+2018,Kuala Lumpur,P,30-34,1.0
+2019,Johor,L,30-34,49.0
+2019,Johor,P,30-34,6.0
+2019,Kedah,L,30-34,70.0
+2019,Kedah,P,30-34,5.0
+2019,Kelantan,L,30-34,63.0
+2019,Kelantan,P,30-34,1.0
+2019,Melaka,L,30-34,10.0
+2019,Melaka,P,30-34,3.0
+2019,Negeri Sembilan,L,30-34,31.0
+2019,Negeri Sembilan,P,30-34,1.0
+2019,Pahang,L,30-34,31.0
+2019,Pahang,P,30-34,3.0
+2019,Perak,L,30-34,43.0
+2019,Perak,P,30-34,6.0
+2019,Perlis,L,30-34,10.0
+2019,Perlis,P,30-34,0.0
+2019,Pulau Pinang,L,30-34,47.0
+2019,Pulau Pinang,P,30-34,5.0
+2019,Sabah,L,30-34,34.0
+2019,Sabah,P,30-34,1.0
+2019,Sarawak,L,30-34,15.0
+2019,Sarawak,P,30-34,3.0
+2019,Selangor,L,30-34,52.0
+2019,Selangor,P,30-34,6.0
+2019,Terengganu,L,30-34,51.0
+2019,Terengganu,P,30-34,0.0
+2019,Kuala Lumpur,L,30-34,17.0
+2019,Kuala Lumpur,P,30-34,1.0
+2017,Johor,L,35-39,292.0
+2017,Johor,P,35-39,18.0
+2017,Kedah,L,35-39,334.0
+2017,Kedah,P,35-39,7.0
+2017,Kelantan,L,35-39,496.0
+2017,Kelantan,P,35-39,8.0
+2017,Melaka,L,35-39,85.0
+2017,Melaka,P,35-39,2.0
+2017,Negeri Sembilan,L,35-39,157.0
+2017,Negeri Sembilan,P,35-39,6.0
+2017,Pahang,L,35-39,378.0
+2017,Pahang,P,35-39,11.0
+2017,Perak,L,35-39,241.0
+2017,Perak,P,35-39,6.0
+2017,Perlis,L,35-39,73.0
+2017,Perlis,P,35-39,6.0
+2017,Pulau Pinang,L,35-39,509.0
+2017,Pulau Pinang,P,35-39,23.0
+2017,Sabah,L,35-39,171.0
+2017,Sabah,P,35-39,7.0
+2017,Sarawak,L,35-39,43.0
+2017,Sarawak,P,35-39,4.0
+2017,Selangor,L,35-39,357.0
+2017,Selangor,P,35-39,15.0
+2017,Terengganu,L,35-39,357.0
+2017,Terengganu,P,35-39,5.0
+2017,Kuala Lumpur,L,35-39,260.0
+2017,Kuala Lumpur,P,35-39,13.0
+2018,Johor,L,35-39,379.0
+2018,Johor,P,35-39,44.0
+2018,Kedah,L,35-39,517.0
+2018,Kedah,P,35-39,14.0
+2018,Kelantan,L,35-39,689.0
+2018,Kelantan,P,35-39,9.0
+2018,Melaka,L,35-39,135.0
+2018,Melaka,P,35-39,10.0
+2018,Negeri Sembilan,L,35-39,223.0
+2018,Negeri Sembilan,P,35-39,17.0
+2018,Pahang,L,35-39,334.0
+2018,Pahang,P,35-39,11.0
+2018,Perak,L,35-39,268.0
+2018,Perak,P,35-39,20.0
+2018,Perlis,L,35-39,134.0
+2018,Perlis,P,35-39,5.0
+2018,Pulau Pinang,L,35-39,235.0
+2018,Pulau Pinang,P,35-39,13.0
+2018,Sabah,L,35-39,228.0
+2018,Sabah,P,35-39,9.0
+2018,Sarawak,L,35-39,186.0
+2018,Sarawak,P,35-39,9.0
+2018,Selangor,L,35-39,387.0
+2018,Selangor,P,35-39,24.0
+2018,Terengganu,L,35-39,304.0
+2018,Terengganu,P,35-39,18.0
+2018,Kuala Lumpur,L,35-39,191.0
+2018,Kuala Lumpur,P,35-39,22.0
+2019,Johor,L,35-39,403.0
+2019,Johor,P,35-39,29.0
+2019,Kedah,L,35-39,607.0
+2019,Kedah,P,35-39,31.0
+2019,Kelantan,L,35-39,447.0
+2019,Kelantan,P,35-39,7.0
+2019,Melaka,L,35-39,104.0
+2019,Melaka,P,35-39,8.0
+2019,Negeri Sembilan,L,35-39,252.0
+2019,Negeri Sembilan,P,35-39,17.0
+2019,Pahang,L,35-39,283.0
+2019,Pahang,P,35-39,8.0
+2019,Perak,L,35-39,302.0
+2019,Perak,P,35-39,18.0
+2019,Perlis,L,35-39,64.0
+2019,Perlis,P,35-39,3.0
+2019,Pulau Pinang,L,35-39,405.0
+2019,Pulau Pinang,P,35-39,20.0
+2019,Sabah,L,35-39,275.0
+2019,Sabah,P,35-39,15.0
+2019,Sarawak,L,35-39,182.0
+2019,Sarawak,P,35-39,17.0
+2019,Selangor,L,35-39,413.0
+2019,Selangor,P,35-39,20.0
+2019,Terengganu,L,35-39,313.0
+2019,Terengganu,P,35-39,9.0
+2019,Kuala Lumpur,L,35-39,180.0
+2019,Kuala Lumpur,P,35-39,17.0
+2017,Johor,L,>=50,124.0
+2017,Johor,P,>=50,4.0
+2017,Kedah,L,>=50,89.0
+2017,Kedah,P,>=50,1.0
+2017,Kelantan,L,>=50,116.0
+2017,Kelantan,P,>=50,0.0
+2017,Melaka,L,>=50,45.0
+2017,Melaka,P,>=50,0.0
+2017,Negeri Sembilan,L,>=50,77.0
+2017,Negeri Sembilan,P,>=50,1.0
+2017,Pahang,L,>=50,92.0
+2017,Pahang,P,>=50,0.0
+2017,Perak,L,>=50,117.0
+2017,Perak,P,>=50,2.0
+2017,Perlis,L,>=50,17.0
+2017,Perlis,P,>=50,0.0
+2017,Pulau Pinang,L,>=50,780.0
+2017,Pulau Pinang,P,>=50,5.0
+2017,Sabah,L,>=50,24.0
+2017,Sabah,P,>=50,0.0
+2017,Sarawak,L,>=50,9.0
+2017,Sarawak,P,>=50,1.0
+2017,Selangor,L,>=50,152.0
+2017,Selangor,P,>=50,5.0
+2017,Terengganu,L,>=50,48.0
+2017,Terengganu,P,>=50,1.0
+2017,Kuala Lumpur,L,>=50,220.0
+2017,Kuala Lumpur,P,>=50,5.0
+2018,Johor,L,>=50,391.0
+2018,Johor,P,>=50,23.0
+2018,Kedah,L,>=50,531.0
+2018,Kedah,P,>=50,20.0
+2018,Kelantan,L,>=50,872.0
+2018,Kelantan,P,>=50,17.0
+2018,Melaka,L,>=50,118.0
+2018,Melaka,P,>=50,6.0
+2018,Negeri Sembilan,L,>=50,219.0
+2018,Negeri Sembilan,P,>=50,22.0
+2018,Pahang,L,>=50,322.0
+2018,Pahang,P,>=50,8.0
+2018,Perak,L,>=50,275.0
+2018,Perak,P,>=50,17.0
+2018,Perlis,L,>=50,109.0
+2018,Perlis,P,>=50,6.0
+2018,Pulau Pinang,L,>=50,250.0
+2018,Pulau Pinang,P,>=50,14.0
+2018,Sabah,L,>=50,246.0
+2018,Sabah,P,>=50,10.0
+2018,Sarawak,L,>=50,160.0
+2018,Sarawak,P,>=50,13.0
+2018,Selangor,L,>=50,355.0
+2018,Selangor,P,>=50,23.0
+2018,Terengganu,L,>=50,405.0
+2018,Terengganu,P,>=50,17.0
+2018,Kuala Lumpur,L,>=50,161.0
+2018,Kuala Lumpur,P,>=50,13.0
+2019,Johor,L,>=50,454.0
+2019,Johor,P,>=50,27.0
+2019,Kedah,L,>=50,647.0
+2019,Kedah,P,>=50,28.0
+2019,Kelantan,L,>=50,591.0
+2019,Kelantan,P,>=50,12.0
+2019,Melaka,L,>=50,136.0
+2019,Melaka,P,>=50,8.0
+2019,Negeri Sembilan,L,>=50,230.0
+2019,Negeri Sembilan,P,>=50,13.0
+2019,Pahang,L,>=50,278.0
+2019,Pahang,P,>=50,16.0
+2019,Perak,L,>=50,353.0
+2019,Perak,P,>=50,28.0
+2019,Perlis,L,>=50,71.0
+2019,Perlis,P,>=50,2.0
+2019,Pulau Pinang,L,>=50,419.0
+2019,Pulau Pinang,P,>=50,26.0
+2019,Sabah,L,>=50,310.0
+2019,Sabah,P,>=50,25.0
+2019,Sarawak,L,>=50,198.0
+2019,Sarawak,P,>=50,16.0
+2019,Selangor,L,>=50,391.0
+2019,Selangor,P,>=50,41.0
+2019,Terengganu,L,>=50,415.0
+2019,Terengganu,P,>=50,8.0
+2019,Kuala Lumpur,L,>=50,135.0
+2019,Kuala Lumpur,P,>=50,15.0
+2017,Johor,L,40-44,185.0
+2017,Johor,P,40-44,9.0
+2017,Kedah,L,40-44,227.0
+2017,Kedah,P,40-44,3.0
+2017,Kelantan,L,40-44,363.0
+2017,Kelantan,P,40-44,7.0
+2017,Melaka,L,40-44,62.0
+2017,Melaka,P,40-44,0.0
+2017,Negeri Sembilan,L,40-44,104.0
+2017,Negeri Sembilan,P,40-44,1.0
+2017,Pahang,L,40-44,255.0
+2017,Pahang,P,40-44,8.0
+2017,Perak,L,40-44,186.0
+2017,Perak,P,40-44,6.0
+2017,Perlis,L,40-44,48.0
+2017,Perlis,P,40-44,1.0
+2017,Pulau Pinang,L,40-44,434.0
+2017,Pulau Pinang,P,40-44,14.0
+2017,Sabah,L,40-44,96.0
+2017,Sabah,P,40-44,4.0
+2017,Sarawak,L,40-44,24.0
+2017,Sarawak,P,40-44,1.0
+2017,Selangor,L,40-44,261.0
+2017,Selangor,P,40-44,9.0
+2017,Terengganu,L,40-44,236.0
+2017,Terengganu,P,40-44,4.0
+2017,Kuala Lumpur,L,40-44,223.0
+2017,Kuala Lumpur,P,40-44,19.0
+2018,Johor,L,40-44,462.0
+2018,Johor,P,40-44,25.0
+2018,Kedah,L,40-44,515.0
+2018,Kedah,P,40-44,11.0
+2018,Kelantan,L,40-44,819.0
+2018,Kelantan,P,40-44,19.0
+2018,Melaka,L,40-44,116.0
+2018,Melaka,P,40-44,5.0
+2018,Negeri Sembilan,L,40-44,228.0
+2018,Negeri Sembilan,P,40-44,21.0
+2018,Pahang,L,40-44,317.0
+2018,Pahang,P,40-44,17.0
+2018,Perak,L,40-44,338.0
+2018,Perak,P,40-44,21.0
+2018,Perlis,L,40-44,97.0
+2018,Perlis,P,40-44,9.0
+2018,Pulau Pinang,L,40-44,296.0
+2018,Pulau Pinang,P,40-44,14.0
+2018,Sabah,L,40-44,284.0
+2018,Sabah,P,40-44,6.0
+2018,Sarawak,L,40-44,119.0
+2018,Sarawak,P,40-44,10.0
+2018,Selangor,L,40-44,428.0
+2018,Selangor,P,40-44,20.0
+2018,Terengganu,L,40-44,442.0
+2018,Terengganu,P,40-44,10.0
+2018,Kuala Lumpur,L,40-44,207.0
+2018,Kuala Lumpur,P,40-44,15.0
+2019,Johor,L,40-44,393.0
+2019,Johor,P,40-44,26.0
+2019,Kedah,L,40-44,661.0
+2019,Kedah,P,40-44,19.0
+2019,Kelantan,L,40-44,571.0
+2019,Kelantan,P,40-44,12.0
+2019,Melaka,L,40-44,148.0
+2019,Melaka,P,40-44,12.0
+2019,Negeri Sembilan,L,40-44,201.0
+2019,Negeri Sembilan,P,40-44,15.0
+2019,Pahang,L,40-44,303.0
+2019,Pahang,P,40-44,13.0
+2019,Perak,L,40-44,328.0
+2019,Perak,P,40-44,19.0
+2019,Perlis,L,40-44,48.0
+2019,Perlis,P,40-44,6.0
+2019,Pulau Pinang,L,40-44,401.0
+2019,Pulau Pinang,P,40-44,29.0
+2019,Sabah,L,40-44,328.0
+2019,Sabah,P,40-44,22.0
+2019,Sarawak,L,40-44,162.0
+2019,Sarawak,P,40-44,18.0
+2019,Selangor,L,40-44,378.0
+2019,Selangor,P,40-44,23.0
+2019,Terengganu,L,40-44,396.0
+2019,Terengganu,P,40-44,8.0
+2019,Kuala Lumpur,L,40-44,143.0
+2019,Kuala Lumpur,P,40-44,18.0
+2017,Johor,L,45-49,131.0
+2017,Johor,P,45-49,2.0
+2017,Kedah,L,45-49,127.0
+2017,Kedah,P,45-49,0.0
+2017,Kelantan,L,45-49,210.0
+2017,Kelantan,P,45-49,1.0
+2017,Melaka,L,45-49,39.0
+2017,Melaka,P,45-49,0.0
+2017,Negeri Sembilan,L,45-49,48.0
+2017,Negeri Sembilan,P,45-49,2.0
+2017,Pahang,L,45-49,141.0
+2017,Pahang,P,45-49,3.0
+2017,Perak,L,45-49,124.0
+2017,Perak,P,45-49,0.0
+2017,Perlis,L,45-49,24.0
+2017,Perlis,P,45-49,0.0
+2017,Pulau Pinang,L,45-49,346.0
+2017,Pulau Pinang,P,45-49,9.0
+2017,Sabah,L,45-49,45.0
+2017,Sabah,P,45-49,1.0
+2017,Sarawak,L,45-49,12.0
+2017,Sarawak,P,45-49,1.0
+2017,Selangor,L,45-49,144.0
+2017,Selangor,P,45-49,7.0
+2017,Terengganu,L,45-49,124.0
+2017,Terengganu,P,45-49,0.0
+2017,Kuala Lumpur,L,45-49,132.0
+2017,Kuala Lumpur,P,45-49,7.0
+2018,Johor,L,45-49,381.0
+2018,Johor,P,45-49,23.0
+2018,Kedah,L,45-49,379.0
+2018,Kedah,P,45-49,6.0
+2018,Kelantan,L,45-49,672.0
+2018,Kelantan,P,45-49,7.0
+2018,Melaka,L,45-49,110.0
+2018,Melaka,P,45-49,3.0
+2018,Negeri Sembilan,L,45-49,217.0
+2018,Negeri Sembilan,P,45-49,4.0
+2018,Pahang,L,45-49,248.0
+2018,Pahang,P,45-49,7.0
+2018,Perak,L,45-49,263.0
+2018,Perak,P,45-49,11.0
+2018,Perlis,L,45-49,73.0
+2018,Perlis,P,45-49,1.0
+2018,Pulau Pinang,L,45-49,307.0
+2018,Pulau Pinang,P,45-49,8.0
+2018,Sabah,L,45-49,191.0
+2018,Sabah,P,45-49,7.0
+2018,Sarawak,L,45-49,70.0
+2018,Sarawak,P,45-49,5.0
+2018,Selangor,L,45-49,343.0
+2018,Selangor,P,45-49,13.0
+2018,Terengganu,L,45-49,348.0
+2018,Terengganu,P,45-49,8.0
+2018,Kuala Lumpur,L,45-49,188.0
+2018,Kuala Lumpur,P,45-49,12.0
+2019,Johor,L,45-49,365.0
+2019,Johor,P,45-49,23.0
+2019,Kedah,L,45-49,605.0
+2019,Kedah,P,45-49,13.0
+2019,Kelantan,L,45-49,503.0
+2019,Kelantan,P,45-49,9.0
+2019,Melaka,L,45-49,131.0
+2019,Melaka,P,45-49,9.0
+2019,Negeri Sembilan,L,45-49,167.0
+2019,Negeri Sembilan,P,45-49,7.0
+2019,Pahang,L,45-49,298.0
+2019,Pahang,P,45-49,10.0
+2019,Perak,L,45-49,325.0
+2019,Perak,P,45-49,8.0
+2019,Perlis,L,45-49,46.0
+2019,Perlis,P,45-49,2.0
+2019,Pulau Pinang,L,45-49,435.0
+2019,Pulau Pinang,P,45-49,21.0
+2019,Sabah,L,45-49,274.0
+2019,Sabah,P,45-49,13.0
+2019,Sarawak,L,45-49,104.0
+2019,Sarawak,P,45-49,12.0
+2019,Selangor,L,45-49,408.0
+2019,Selangor,P,45-49,12.0
+2019,Terengganu,L,45-49,379.0
+2019,Terengganu,P,45-49,4.0
+2019,Kuala Lumpur,L,45-49,172.0
+2019,Kuala Lumpur,P,45-49,13.0
+2017,Johor,L,18,30.0
+2017,Johor,P,18,1.0
+2017,Kedah,L,18,54.0
+2017,Kedah,P,18,1.0
+2017,Kelantan,L,18,60.0
+2017,Kelantan,P,18,1.0
+2017,Melaka,L,18,7.0
+2017,Melaka,P,18,2.0
+2017,Negeri Sembilan,L,18,10.0
+2017,Negeri Sembilan,P,18,1.0
+2017,Pahang,L,18,22.0
+2017,Pahang,P,18,0.0
+2017,Perak,L,18,16.0
+2017,Perak,P,18,1.0
+2017,Perlis,L,18,12.0
+2017,Perlis,P,18,1.0
+2017,Pulau Pinang,L,18,18.0
+2017,Pulau Pinang,P,18,3.0
+2017,Sabah,L,18,22.0
+2017,Sabah,P,18,3.0
+2017,Sarawak,L,18,4.0
+2017,Sarawak,P,18,0.0
+2017,Selangor,L,18,59.0
+2017,Selangor,P,18,4.0
+2017,Terengganu,L,18,14.0
+2017,Terengganu,P,18,0.0
+2017,Kuala Lumpur,L,18,26.0
+2017,Kuala Lumpur,P,18,2.0
+2018,Johor,L,18,132.0
+2018,Johor,P,18,2.0
+2018,Kedah,L,18,103.0
+2018,Kedah,P,18,1.0
+2018,Kelantan,L,18,156.0
+2018,Kelantan,P,18,1.0
+2018,Melaka,L,18,77.0
+2018,Melaka,P,18,0.0
+2018,Negeri Sembilan,L,18,129.0
+2018,Negeri Sembilan,P,18,1.0
+2018,Pahang,L,18,99.0
+2018,Pahang,P,18,0.0
+2018,Perak,L,18,157.0
+2018,Perak,P,18,4.0
+2018,Perlis,L,18,19.0
+2018,Perlis,P,18,0.0
+2018,Pulau Pinang,L,18,564.0
+2018,Pulau Pinang,P,18,11.0
+2018,Sabah,L,18,40.0
+2018,Sabah,P,18,0.0
+2018,Sarawak,L,18,12.0
+2018,Sarawak,P,18,0.0
+2018,Selangor,L,18,121.0
+2018,Selangor,P,18,2.0
+2018,Terengganu,L,18,71.0
+2018,Terengganu,P,18,0.0
+2018,Kuala Lumpur,L,18,125.0
+2018,Kuala Lumpur,P,18,1.0
+2019,Johor,L,18,140.0
+2019,Johor,P,18,2.0
+2019,Kedah,L,18,178.0
+2019,Kedah,P,18,1.0
+2019,Kelantan,L,18,143.0
+2019,Kelantan,P,18,1.0
+2019,Melaka,L,18,84.0
+2019,Melaka,P,18,
+2019,Negeri Sembilan,L,18,98.0
+2019,Negeri Sembilan,P,18,1.0
+2019,Pahang,L,18,98.0
+2019,Pahang,P,18,3.0
+2019,Perak,L,18,190.0
+2019,Perak,P,18,
+2019,Perlis,L,18,13.0
+2019,Perlis,P,18,1.0
+2019,Pulau Pinang,L,18,456.0
+2019,Pulau Pinang,P,18,7.0
+2019,Sabah,L,18,91.0
+2019,Sabah,P,18,3.0
+2019,Sarawak,L,18,27.0
+2019,Sarawak,P,18,1.0
+2019,Selangor,L,18,146.0
+2019,Selangor,P,18,1.0
+2019,Terengganu,L,18,71.0
+2019,Terengganu,P,18,0.0
+2019,Kuala Lumpur,L,18,90.0
+2019,Kuala Lumpur,P,18,1.0
+2017,Johor,L,13-15,2.0
+2017,Johor,P,13-15,2.0
+2017,Kedah,L,13-15,18.0
+2017,Kedah,P,13-15,2.0
+2017,Kelantan,L,13-15,10.0
+2017,Kelantan,P,13-15,0.0
+2017,Melaka,L,13-15,0.0
+2017,Melaka,P,13-15,0.0
+2017,Negeri Sembilan,L,13-15,1.0
+2017,Negeri Sembilan,P,13-15,0.0
+2017,Pahang,L,13-15,1.0
+2017,Pahang,P,13-15,0.0
+2017,Perak,L,13-15,0.0
+2017,Perak,P,13-15,0.0
+2017,Perlis,L,13-15,6.0
+2017,Perlis,P,13-15,0.0
+2017,Pulau Pinang,L,13-15,2.0
+2017,Pulau Pinang,P,13-15,0.0
+2017,Sabah,L,13-15,2.0
+2017,Sabah,P,13-15,1.0
+2017,Sarawak,L,13-15,1.0
+2017,Sarawak,P,13-15,0.0
+2017,Selangor,L,13-15,6.0
+2017,Selangor,P,13-15,0.0
+2017,Terengganu,L,13-15,4.0
+2017,Terengganu,P,13-15,0.0
+2017,Kuala Lumpur,L,13-15,12.0
+2017,Kuala Lumpur,P,13-15,2.0
+2018,Johor,L,13-15,261.0
+2018,Johor,P,13-15,7.0
+2018,Kedah,L,13-15,275.0
+2018,Kedah,P,13-15,2.0
+2018,Kelantan,L,13-15,473.0
+2018,Kelantan,P,13-15,1.0
+2018,Melaka,L,13-15,79.0
+2018,Melaka,P,13-15,1.0
+2018,Negeri Sembilan,L,13-15,151.0
+2018,Negeri Sembilan,P,13-15,3.0
+2018,Pahang,L,13-15,179.0
+2018,Pahang,P,13-15,7.0
+2018,Perak,L,13-15,226.0
+2018,Perak,P,13-15,7.0
+2018,Perlis,L,13-15,55.0
+2018,Perlis,P,13-15,3.0
+2018,Pulau Pinang,L,13-15,290.0
+2018,Pulau Pinang,P,13-15,5.0
+2018,Sabah,L,13-15,124.0
+2018,Sabah,P,13-15,4.0
+2018,Sarawak,L,13-15,31.0
+2018,Sarawak,P,13-15,2.0
+2018,Selangor,L,13-15,236.0
+2018,Selangor,P,13-15,8.0
+2018,Terengganu,L,13-15,242.0
+2018,Terengganu,P,13-15,2.0
+2018,Kuala Lumpur,L,13-15,136.0
+2018,Kuala Lumpur,P,13-15,3.0
+2019,Johor,L,13-15,251.0
+2019,Johor,P,13-15,8.0
+2019,Kedah,L,13-15,399.0
+2019,Kedah,P,13-15,9.0
+2019,Kelantan,L,13-15,347.0
+2019,Kelantan,P,13-15,8.0
+2019,Melaka,L,13-15,91.0
+2019,Melaka,P,13-15,6.0
+2019,Negeri Sembilan,L,13-15,108.0
+2019,Negeri Sembilan,P,13-15,4.0
+2019,Pahang,L,13-15,177.0
+2019,Pahang,P,13-15,5.0
+2019,Perak,L,13-15,214.0
+2019,Perak,P,13-15,5.0
+2019,Perlis,L,13-15,30.0
+2019,Perlis,P,13-15,1.0
+2019,Pulau Pinang,L,13-15,336.0
+2019,Pulau Pinang,P,13-15,15.0
+2019,Sabah,L,13-15,164.0
+2019,Sabah,P,13-15,14.0
+2019,Sarawak,L,13-15,48.0
+2019,Sarawak,P,13-15,5.0
+2019,Selangor,L,13-15,254.0
+2019,Selangor,P,13-15,13.0
+2019,Terengganu,L,13-15,267.0
+2019,Terengganu,P,13-15,6.0
+2019,Kuala Lumpur,L,13-15,126.0
+2019,Kuala Lumpur,P,13-15,10.0
+2017,Johor,L,16-17,10.0
+2017,Johor,P,16-17,4.0
+2017,Kedah,L,16-17,70.0
+2017,Kedah,P,16-17,3.0
+2017,Kelantan,L,16-17,28.0
+2017,Kelantan,P,16-17,3.0
+2017,Melaka,L,16-17,0.0
+2017,Melaka,P,16-17,0.0
+2017,Negeri Sembilan,L,16-17,5.0
+2017,Negeri Sembilan,P,16-17,0.0
+2017,Pahang,L,16-17,13.0
+2017,Pahang,P,16-17,0.0
+2017,Perak,L,16-17,7.0
+2017,Perak,P,16-17,0.0
+2017,Perlis,L,16-17,15.0
+2017,Perlis,P,16-17,0.0
+2017,Pulau Pinang,L,16-17,5.0
+2017,Pulau Pinang,P,16-17,0.0
+2017,Sabah,L,16-17,12.0
+2017,Sabah,P,16-17,1.0
+2017,Sarawak,L,16-17,2.0
+2017,Sarawak,P,16-17,0.0
+2017,Selangor,L,16-17,23.0
+2017,Selangor,P,16-17,3.0
+2017,Terengganu,L,16-17,19.0
+2017,Terengganu,P,16-17,0.0
+2017,Kuala Lumpur,L,16-17,25.0
+2017,Kuala Lumpur,P,16-17,0.0
+2018,Johor,L,16-17,130.0
+2018,Johor,P,16-17,5.0
+2018,Kedah,L,16-17,169.0
+2018,Kedah,P,16-17,1.0
+2018,Kelantan,L,16-17,235.0
+2018,Kelantan,P,16-17,2.0
+2018,Melaka,L,16-17,55.0
+2018,Melaka,P,16-17,1.0
+2018,Negeri Sembilan,L,16-17,92.0
+2018,Negeri Sembilan,P,16-17,2.0
+2018,Pahang,L,16-17,117.0
+2018,Pahang,P,16-17,5.0
+2018,Perak,L,16-17,144.0
+2018,Perak,P,16-17,2.0
+2018,Perlis,L,16-17,18.0
+2018,Perlis,P,16-17,0.0
+2018,Pulau Pinang,L,16-17,225.0
+2018,Pulau Pinang,P,16-17,7.0
+2018,Sabah,L,16-17,68.0
+2018,Sabah,P,16-17,1.0
+2018,Sarawak,L,16-17,20.0
+2018,Sarawak,P,16-17,2.0
+2018,Selangor,L,16-17,157.0
+2018,Selangor,P,16-17,6.0
+2018,Terengganu,L,16-17,99.0
+2018,Terengganu,P,16-17,1.0
+2018,Kuala Lumpur,L,16-17,87.0
+2018,Kuala Lumpur,P,16-17,8.0
+2019,Johor,L,16-17,156.0
+2019,Johor,P,16-17,3.0
+2019,Kedah,L,16-17,236.0
+2019,Kedah,P,16-17,2.0
+2019,Kelantan,L,16-17,227.0
+2019,Kelantan,P,16-17,3.0
+2019,Melaka,L,16-17,67.0
+2019,Melaka,P,16-17,1.0
+2019,Negeri Sembilan,L,16-17,86.0
+2019,Negeri Sembilan,P,16-17,2.0
+2019,Pahang,L,16-17,123.0
+2019,Pahang,P,16-17,2.0
+2019,Perak,L,16-17,166.0
+2019,Perak,P,16-17,6.0
+2019,Perlis,L,16-17,10.0
+2019,Perlis,P,16-17,0.0
+2019,Pulau Pinang,L,16-17,247.0
+2019,Pulau Pinang,P,16-17,7.0
+2019,Sabah,L,16-17,97.0
+2019,Sabah,P,16-17,5.0
+2019,Sarawak,L,16-17,26.0
+2019,Sarawak,P,16-17,2.0
+2019,Selangor,L,16-17,175.0
+2019,Selangor,P,16-17,4.0
+2019,Terengganu,L,16-17,142.0
+2019,Terengganu,P,16-17,3.0
+2019,Kuala Lumpur,L,16-17,86.0
+2019,Kuala Lumpur,P,16-17,5.0
