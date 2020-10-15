@@ -11,6 +11,7 @@ Car Theft,Johor,2019,981,25.32
 Motorcycle Theft,Johor,2019,3471,89.59
 Van/Lorry Theft,Johor,2019,219,5.65
 House break-ins,Johor,2019,1364,35.20
+Drug addicts,Johor,2019,2371,61.19
 Murder,Kedah,2019,20,0.89
 Rape,Kedah,2019,145,6.48
 Armed Group Robbery,Kedah,2019,1,0.04
@@ -23,6 +24,7 @@ Car Theft,Kedah,2019,314,14.04
 Motorcycle Theft,Kedah,2019,2192,98.00
 Van/Lorry Theft,Kedah,2019,78,3.49
 House break-ins,Kedah,2019,1138,50.88
+Drug addicts,Kedah,2019,3582,160.15
 Murder,Kelantan,2019,9,0.47
 Rape,Kelantan,2019,73,3.80
 Armed Group Robbery,Kelantan,2019,2,0.10
@@ -35,6 +37,7 @@ Car Theft,Kelantan,2019,301,15.66
 Motorcycle Theft,Kelantan,2019,1069,55.63
 Van/Lorry Theft,Kelantan,2019,20,1.04
 House break-ins,Kelantan,2019,929,48.34
+Drug addicts,Kelantan,2019,2998,156.00
 Murder,Kuala Lumpur,2019,23,1.16
 Rape,Kuala Lumpur,2019,122,6.13
 Armed Group Robbery,Kuala Lumpur,2019,0,0.00
@@ -47,6 +50,7 @@ Car Theft,Kuala Lumpur,2019,1424,71.60
 Motorcycle Theft,Kuala Lumpur,2019,2763,138.92
 Van/Lorry Theft,Kuala Lumpur,2019,254,12.77
 House break-ins,Kuala Lumpur,2019,1088,54.70
+Drug addicts,Kuala Lumpur,2019,1066,53.60
 Murder,Melaka,2019,5,0.53
 Rape,Melaka,2019,22,2.32
 Armed Group Robbery,Melaka,2019,0,0.00
@@ -59,6 +63,7 @@ Car Theft,Melaka,2019,91,9.60
 Motorcycle Theft,Melaka,2019,718,75.78
 Van/Lorry Theft,Melaka,2019,18,1.90
 House break-ins,Melaka,2019,681,71.87
+Drug addicts,Melaka,2019,819,86.44
 Murder,Negeri Sembilan,2019,10,0.87
 Rape,Negeri Sembilan,2019,56,4.86
 Armed Group Robbery,Negeri Sembilan,2019,0,0.00
@@ -71,6 +76,7 @@ Car Theft,Negeri Sembilan,2019,166,14.41
 Motorcycle Theft,Negeri Sembilan,2019,630,54.69
 Van/Lorry Theft,Negeri Sembilan,2019,48,4.17
 House break-ins,Negeri Sembilan,2019,756,65.63
+Drug addicts,Negeri Sembilan,2019,1244,107.99
 Murder,Pahang,2019,17,0.98
 Rape,Pahang,2019,114,6.60
 Armed Group Robbery,Pahang,2019,1,0.06
@@ -83,6 +89,7 @@ Car Theft,Pahang,2019,130,7.53
 Motorcycle Theft,Pahang,2019,713,41.30
 Van/Lorry Theft,Pahang,2019,29,1.68
 House break-ins,Pahang,2019,718,41.59
+Drug addicts,Pahang,2019,1672,96.85
 Murder,Perak,2019,31,1.20
 Rape,Perak,2019,102,3.94
 Armed Group Robbery,Perak,2019,0,0.00
@@ -95,6 +102,7 @@ Car Theft,Perak,2019,237,9.15
 Motorcycle Theft,Perak,2019,1360,52.49
 Van/Lorry Theft,Perak,2019,58,2.24
 House break-ins,Perak,2019,1064,41.07
+Drug addicts,Perak,2019,2046,78.97
 Murder,Perlis,2019,1,0.38
 Rape,Perlis,2019,24,9.16
 Armed Group Robbery,Perlis,2019,1,0.38
@@ -107,6 +115,7 @@ Car Theft,Perlis,2019,17,6.49
 Motorcycle Theft,Perlis,2019,89,33.97
 Van/Lorry Theft,Perlis,2019,2,0.76
 House break-ins,Perlis,2019,111,42.37
+Drug addicts,Perlis,2019,316,120.61
 Murder,Penang,2019,16,0.90
 Rape,Penang,2019,80,4.48
 Armed Group Robbery,Penang,2019,2,0.11
@@ -119,6 +128,7 @@ Car Theft,Penang,2019,314,17.57
 Motorcycle Theft,Penang,2019,1704,95.36
 Van/Lorry Theft,Penang,2019,74,4.14
 House break-ins,Penang,2019,1036,57.97
+Drug addicts,Penang,2019,2893,161.89
 Murder,Sabah,2019,28,0.69
 Rape,Sabah,2019,219,5.36
 Armed Group Robbery,Sabah,2019,2,0.05
@@ -131,6 +141,7 @@ Car Theft,Sabah,2019,157,3.84
 Motorcycle Theft,Sabah,2019,436,10.67
 Van/Lorry Theft,Sabah,2019,81,1.98
 House break-ins,Sabah,2019,1806,44.21
+Drug addicts,Sabah,2019,1713,41.93
 Murder,Sarawak,2019,27,0.94
 Rape,Sarawak,2019,149,5.19
 Armed Group Robbery,Sarawak,2019,4,0.14
@@ -143,6 +154,7 @@ Car Theft,Sarawak,2019,404,14.08
 Motorcycle Theft,Sarawak,2019,1393,48.56
 Van/Lorry Theft,Sarawak,2019,61,2.13
 House break-ins,Sarawak,2019,1623,56.58
+Drug addicts,Sarawak,2019,852,29.70
 Murder,Selangor,2019,90,1.36
 Rape,Selangor,2019,346,5.23
 Armed Group Robbery,Selangor,2019,2,0.03
@@ -155,6 +167,7 @@ Car Theft,Selangor,2019,2204,33.32
 Motorcycle Theft,Selangor,2019,5503,83.20
 Van/Lorry Theft,Selangor,2019,595,9.00
 House break-ins,Selangor,2019,3679,55.62
+Drug addicts,Selangor,2019,2385,36.05
 Murder,Terengganu,2019,1,0.08
 Rape,Terengganu,2019,80,6.30
 Armed Group Robbery,Terengganu,2019,0,0.00
@@ -167,3 +180,4 @@ Car Theft,Terengganu,2019,78,6.14
 Motorcycle Theft,Terengganu,2019,466,36.70
 Van/Lorry Theft,Terengganu,2019,13,1.02
 House break-ins,Terengganu,2019,496,39.07
+Drug addicts,Terengganu,2019,2123,167.22

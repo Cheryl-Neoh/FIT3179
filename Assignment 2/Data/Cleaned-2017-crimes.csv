@@ -11,6 +11,7 @@ Car Theft,Johor,2017,1097,29.10
 Motorcycle Theft,Johor,2017,4104,108.85
 Van/Lorry Theft,Johor,2017,274,7.27
 House break-ins,Johor,2017,1211,32.12
+Drug addicts,Johor,2017,2108,55.91
 Murder,Kedah,2017,21,0.97
 Rape,Kedah,2017,119,5.47
 Armed Group Robbery,Kedah,2017,2,0.09
@@ -23,6 +24,7 @@ Car Theft,Kedah,2017,378,17.38
 Motorcycle Theft,Kedah,2017,2846,130.84
 Van/Lorry Theft,Kedah,2017,81,3.72
 House break-ins,Kedah,2017,1350,62.06
+Drug addicts,Kedah,2017,2655,122.06
 Murder,Kelantan,2017,13,0.70
 Rape,Kelantan,2017,114,6.17
 Armed Group Robbery,Kelantan,2017,2,0.11
@@ -35,6 +37,7 @@ Car Theft,Kelantan,2017,722,39.08
 Motorcycle Theft,Kelantan,2017,1983,107.34
 Van/Lorry Theft,Kelantan,2017,98,5.30
 House break-ins,Kelantan,2017,570,30.85
+Drug addicts,Kelantan,2017,3700,200.28
 Murder,Kuala Lumpur,2017,37,1.89
 Rape,Kuala Lumpur,2017,132,6.76
 Armed Group Robbery,Kuala Lumpur,2017,4,0.20
@@ -47,6 +50,7 @@ Car Theft,Kuala Lumpur,2017,1548,79.24
 Motorcycle Theft,Kuala Lumpur,2017,3328,170.36
 Van/Lorry Theft,Kuala Lumpur,2017,291,14.90
 House break-ins,Kuala Lumpur,2017,1188,60.81
+Drug addicts,Kuala Lumpur,2017,1693,86.66
 Murder,Melaka,2017,7,0.76
 Rape,Melaka,2017,69,7.49
 Armed Group Robbery,Melaka,2017,1,0.11
@@ -58,6 +62,7 @@ Theft ( Others ),Melaka,2017,448,48.62
 Car Theft,Melaka,2017,112,12.16
 Motorcycle Theft,Melaka,2017,1101,119.49
 Van/Lorry Theft,Melaka,2017,27,2.93
+Drug addicts,Melaka,2017,613,66.53
 House break-ins,Melaka,2017,567,61.54
 Murder,Negeri Sembilan,2017,14,1.24
 Rape,Negeri Sembilan,2017,91,8.06
@@ -71,6 +76,7 @@ Car Theft,Negeri Sembilan,2017,170,15.06
 Motorcycle Theft,Negeri Sembilan,2017,839,74.31
 Van/Lorry Theft,Negeri Sembilan,2017,64,5.67
 House break-ins,Negeri Sembilan,2017,895,79.27
+Drug addicts,Negeri Sembilan,2017,1012,89.63
 Murder,Pahang,2017,16,0.95
 Rape,Pahang,2017,163,9.71
 Armed Group Robbery,Pahang,2017,1,0.06
@@ -83,6 +89,7 @@ Car Theft,Pahang,2017,216,12.86
 Motorcycle Theft,Pahang,2017,1173,69.86
 Van/Lorry Theft,Pahang,2017,56,3.34
 House break-ins,Pahang,2017,794,47.29
+Drug addicts,Pahang,2017,2088,124.35
 Murder,Perak,2017,35,1.37
 Rape,Perak,2017,95,3.73
 Armed Group Robbery,Perak,2017,4,0.16
@@ -95,6 +102,7 @@ Car Theft,Perak,2017,321,12.60
 Motorcycle Theft,Perak,2017,1912,75.04
 Van/Lorry Theft,Perak,2017,81,3.18
 House break-ins,Perak,2017,859,33.71
+Drug addicts,Perak,2017,1557,61.11
 Murder,Perlis,2017,2,0.78
 Rape,Perlis,2017,30,11.70
 Armed Group Robbery,Perlis,2017,0,0.00
@@ -107,6 +115,7 @@ Car Theft,Perlis,2017,11,4.29
 Motorcycle Theft,Perlis,2017,186,72.54
 Van/Lorry Theft,Perlis,2017,5,1.95
 House break-ins,Perlis,2017,87,33.93
+Drug addicts,Perlis,2017,654,255.07
 Murder,Penang,2017,17,0.97
 Rape,Penang,2017,80,4.58
 Armed Group Robbery,Penang,2017,0,0.00
@@ -119,6 +128,7 @@ Car Theft,Penang,2017,357,20.44
 Motorcycle Theft,Penang,2017,2322,132.94
 Van/Lorry Theft,Penang,2017,65,3.72
 House break-ins,Penang,2017,868,49.69
+Drug addicts,Penang,2017,3844,220.07
 Murder,Sabah,2017,36,0.91
 Rape,Sabah,2017,211,5.34
 Armed Group Robbery,Sabah,2017,0,0.00
@@ -131,6 +141,7 @@ Car Theft,Sabah,2017,244,6.17
 Motorcycle Theft,Sabah,2017,666,16.85
 Van/Lorry Theft,Sabah,2017,116,2.93
 House break-ins,Sabah,2017,1908,48.27
+Drug addicts,Sabah,2017,1139,28.82
 Murder,Sarawak,2017,27,0.97
 Rape,Sarawak,2017,150,5.38
 Armed Group Robbery,Sarawak,2017,2,0.07
@@ -143,6 +154,7 @@ Car Theft,Sarawak,2017,574,20.58
 Motorcycle Theft,Sarawak,2017,2258,80.95
 Van/Lorry Theft,Sarawak,2017,75,2.69
 House break-ins,Sarawak,2017,1314,47.11
+Drug addicts,Sarawak,2017,440,15.77
 Murder,Selangor,2017,83,1.30
 Rape,Selangor,2017,321,5.01
 Armed Group Robbery,Selangor,2017,12,0.19
@@ -155,6 +167,7 @@ Car Theft,Selangor,2017,2586,40.40
 Motorcycle Theft,Selangor,2017,7945,124.12
 Van/Lorry Theft,Selangor,2017,844,13.19
 House break-ins,Selangor,2017,4133,64.57
+Drug addicts,Selangor,2017,2375,37.10
 Murder,Terengganu,2017,5,0.41
 Rape,Terengganu,2017,64,5.24
 Armed Group Robbery,Terengganu,2017,0,0.00
@@ -167,3 +180,4 @@ Car Theft,Terengganu,2017,146,11.95
 Motorcycle Theft,Terengganu,2017,914,74.82
 Van/Lorry Theft,Terengganu,2017,22,1.80
 House break-ins,Terengganu,2017,456,37.33
+Drug addicts,Terengganu,2017,2044,167.32
