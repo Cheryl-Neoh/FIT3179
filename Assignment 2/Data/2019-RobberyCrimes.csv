@@ -1,0 +1,183 @@
+Type of crime,id,Year,Number of cases,"Rate per 100,000 people"
+Murder,Johor,2019,35,0.9
+Rape,Johor,2019,206,5.32
+Armed Group Robbery,Johor,2019,2,0.05
+Unarmed Group Robbery,Johor,2019,753,19.43
+Armed Robbery,Johor,2019,0,0.0
+Unarmed Group Robbery,Johor,2019,328,8.47
+Harming,Johor,2019,599,15.46
+Theft ( Others ),Johor,2019,1912,49.35
+Car Theft,Johor,2019,981,25.32
+Motorcycle Theft,Johor,2019,3471,89.59
+Van/Lorry Theft,Johor,2019,219,5.65
+House break-ins,Johor,2019,1364,35.2
+Drug addicts,Johor,2019,2371,61.19
+Murder,Kedah,2019,20,0.89
+Rape,Kedah,2019,145,6.48
+Armed Group Robbery,Kedah,2019,1,0.04
+Unarmed Group Robbery,Kedah,2019,277,12.38
+Armed Robbery,Kedah,2019,2,0.09
+Unarmed Group Robbery,Kedah,2019,163,7.29
+Harming,Kedah,2019,329,14.71
+Theft ( Others ),Kedah,2019,956,42.74
+Car Theft,Kedah,2019,314,14.04
+Motorcycle Theft,Kedah,2019,2192,98.0
+Van/Lorry Theft,Kedah,2019,78,3.49
+House break-ins,Kedah,2019,1138,50.88
+Drug addicts,Kedah,2019,3582,160.15
+Murder,Kelantan,2019,9,0.47
+Rape,Kelantan,2019,73,3.8
+Armed Group Robbery,Kelantan,2019,2,0.1
+Unarmed Group Robbery,Kelantan,2019,121,6.3
+Armed Robbery,Kelantan,2019,0,0.0
+Unarmed Group Robbery,Kelantan,2019,87,4.53
+Harming,Kelantan,2019,178,9.26
+Theft ( Others ),Kelantan,2019,757,39.39
+Car Theft,Kelantan,2019,301,15.66
+Motorcycle Theft,Kelantan,2019,1069,55.63
+Van/Lorry Theft,Kelantan,2019,20,1.04
+House break-ins,Kelantan,2019,929,48.34
+Drug addicts,Kelantan,2019,2998,156.0
+Murder,Kuala Lumpur,2019,23,1.16
+Rape,Kuala Lumpur,2019,122,6.13
+Armed Group Robbery,Kuala Lumpur,2019,0,0.0
+Unarmed Group Robbery,Kuala Lumpur,2019,1172,58.93
+Armed Robbery,Kuala Lumpur,2019,2,0.1
+Unarmed Group Robbery,Kuala Lumpur,2019,1091,54.85
+Harming,Kuala Lumpur,2019,506,25.44
+Theft ( Others ),Kuala Lumpur,2019,2733,137.41
+Car Theft,Kuala Lumpur,2019,1424,71.6
+Motorcycle Theft,Kuala Lumpur,2019,2763,138.92
+Van/Lorry Theft,Kuala Lumpur,2019,254,12.77
+House break-ins,Kuala Lumpur,2019,1088,54.7
+Drug addicts,Kuala Lumpur,2019,1066,53.6
+Murder,Melaka,2019,5,0.53
+Rape,Melaka,2019,22,2.32
+Armed Group Robbery,Melaka,2019,0,0.0
+Unarmed Group Robbery,Melaka,2019,151,15.94
+Armed Robbery,Melaka,2019,0,0.0
+Unarmed Group Robbery,Melaka,2019,118,12.45
+Harming,Melaka,2019,164,17.31
+Theft ( Others ),Melaka,2019,593,62.59
+Car Theft,Melaka,2019,91,9.6
+Motorcycle Theft,Melaka,2019,718,75.78
+Van/Lorry Theft,Melaka,2019,18,1.9
+House break-ins,Melaka,2019,681,71.87
+Drug addicts,Melaka,2019,819,86.44
+Murder,Negeri Sembilan,2019,10,0.87
+Rape,Negeri Sembilan,2019,56,4.86
+Armed Group Robbery,Negeri Sembilan,2019,0,0.0
+Unarmed Group Robbery,Negeri Sembilan,2019,282,24.48
+Armed Robbery,Negeri Sembilan,2019,0,0.0
+Unarmed Group Robbery,Negeri Sembilan,2019,172,14.93
+Harming,Negeri Sembilan,2019,258,22.4
+Theft ( Others ),Negeri Sembilan,2019,945,82.03
+Car Theft,Negeri Sembilan,2019,166,14.41
+Motorcycle Theft,Negeri Sembilan,2019,630,54.69
+Van/Lorry Theft,Negeri Sembilan,2019,48,4.17
+House break-ins,Negeri Sembilan,2019,756,65.63
+Drug addicts,Negeri Sembilan,2019,1244,107.99
+Murder,Pahang,2019,17,0.98
+Rape,Pahang,2019,114,6.6
+Armed Group Robbery,Pahang,2019,1,0.06
+Unarmed Group Robbery,Pahang,2019,152,8.8
+Armed Robbery,Pahang,2019,0,0.0
+Unarmed Group Robbery,Pahang,2019,86,4.98
+Harming,Pahang,2019,226,13.09
+Theft ( Others ),Pahang,2019,1086,62.91
+Car Theft,Pahang,2019,130,7.53
+Motorcycle Theft,Pahang,2019,713,41.3
+Van/Lorry Theft,Pahang,2019,29,1.68
+House break-ins,Pahang,2019,718,41.59
+Drug addicts,Pahang,2019,1672,96.85
+Murder,Perak,2019,31,1.2
+Rape,Perak,2019,102,3.94
+Armed Group Robbery,Perak,2019,0,0.0
+Unarmed Group Robbery,Perak,2019,382,14.74
+Armed Robbery,Perak,2019,0,0.0
+Unarmed Group Robbery,Perak,2019,167,6.45
+Harming,Perak,2019,419,16.17
+Theft ( Others ),Perak,2019,1091,42.11
+Car Theft,Perak,2019,237,9.15
+Motorcycle Theft,Perak,2019,1360,52.49
+Van/Lorry Theft,Perak,2019,58,2.24
+House break-ins,Perak,2019,1064,41.07
+Drug addicts,Perak,2019,2046,78.97
+Murder,Perlis,2019,1,0.38
+Rape,Perlis,2019,24,9.16
+Armed Group Robbery,Perlis,2019,1,0.38
+Unarmed Group Robbery,Perlis,2019,14,5.34
+Armed Robbery,Perlis,2019,0,0.0
+Unarmed Group Robbery,Perlis,2019,21,8.02
+Harming,Perlis,2019,60,22.9
+Theft ( Others ),Perlis,2019,187,71.37
+Car Theft,Perlis,2019,17,6.49
+Motorcycle Theft,Perlis,2019,89,33.97
+Van/Lorry Theft,Perlis,2019,2,0.76
+House break-ins,Perlis,2019,111,42.37
+Drug addicts,Perlis,2019,316,120.61
+Murder,Penang,2019,16,0.9
+Rape,Penang,2019,80,4.48
+Armed Group Robbery,Penang,2019,2,0.11
+Unarmed Group Robbery,Penang,2019,400,22.38
+Armed Robbery,Penang,2019,0,0.0
+Unarmed Group Robbery,Penang,2019,218,12.2
+Harming,Penang,2019,341,19.08
+Theft ( Others ),Penang,2019,1035,57.92
+Car Theft,Penang,2019,314,17.57
+Motorcycle Theft,Penang,2019,1704,95.36
+Van/Lorry Theft,Penang,2019,74,4.14
+House break-ins,Penang,2019,1036,57.97
+Drug addicts,Penang,2019,2893,161.89
+Murder,Sabah,2019,28,0.69
+Rape,Sabah,2019,219,5.36
+Armed Group Robbery,Sabah,2019,2,0.05
+Unarmed Group Robbery,Sabah,2019,78,1.91
+Armed Robbery,Sabah,2019,0,0.0
+Unarmed Group Robbery,Sabah,2019,90,2.2
+Harming,Sabah,2019,221,5.41
+Theft ( Others ),Sabah,2019,2626,64.28
+Car Theft,Sabah,2019,157,3.84
+Motorcycle Theft,Sabah,2019,436,10.67
+Van/Lorry Theft,Sabah,2019,81,1.98
+House break-ins,Sabah,2019,1806,44.21
+Drug addicts,Sabah,2019,1713,41.93
+Murder,Sarawak,2019,27,0.94
+Rape,Sarawak,2019,149,5.19
+Armed Group Robbery,Sarawak,2019,4,0.14
+Unarmed Group Robbery,Sarawak,2019,244,8.51
+Armed Robbery,Sarawak,2019,0,0.0
+Unarmed Group Robbery,Sarawak,2019,139,4.85
+Harming,Sarawak,2019,335,11.68
+Theft ( Others ),Sarawak,2019,1644,57.31
+Car Theft,Sarawak,2019,404,14.08
+Motorcycle Theft,Sarawak,2019,1393,48.56
+Van/Lorry Theft,Sarawak,2019,61,2.13
+House break-ins,Sarawak,2019,1623,56.58
+Drug addicts,Sarawak,2019,852,29.7
+Murder,Selangor,2019,90,1.36
+Rape,Selangor,2019,346,5.23
+Armed Group Robbery,Selangor,2019,2,0.03
+Unarmed Group Robbery,Selangor,2019,1982,29.97
+Armed Robbery,Selangor,2019,4,0.06
+Unarmed Group Robbery,Selangor,2019,922,13.94
+Harming,Selangor,2019,960,14.51
+Theft ( Others ),Selangor,2019,3519,53.2
+Car Theft,Selangor,2019,2204,33.32
+Motorcycle Theft,Selangor,2019,5503,83.2
+Van/Lorry Theft,Selangor,2019,595,9.0
+House break-ins,Selangor,2019,3679,55.62
+Drug addicts,Selangor,2019,2385,36.05
+Murder,Terengganu,2019,1,0.08
+Rape,Terengganu,2019,80,6.3
+Armed Group Robbery,Terengganu,2019,0,0.0
+Unarmed Group Robbery,Terengganu,2019,50,3.94
+Armed Robbery,Terengganu,2019,0,0.0
+Unarmed Group Robbery,Terengganu,2019,44,3.47
+Harming,Terengganu,2019,118,9.29
+Theft ( Others ),Terengganu,2019,524,41.27
+Car Theft,Terengganu,2019,78,6.14
+Motorcycle Theft,Terengganu,2019,466,36.7
+Van/Lorry Theft,Terengganu,2019,13,1.02
+House break-ins,Terengganu,2019,496,39.07
+Drug addicts,Terengganu,2019,2123,167.22
