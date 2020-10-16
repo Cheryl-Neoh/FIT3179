@@ -25,7 +25,7 @@
       "key": "id",
       "fields": ["Rate per 100,000 people", "Year", "Total cases"]
     }, 
-    { "filter": "datum.Year == YearFilter ? 0.5 : 0"}
+    "filter": "datum.Year == YearFilter ? 0.5 : 0"
   }],
   "projection": {
     "type": "mercator"
