@@ -13,10 +13,11 @@
     "lookup": "id",
     "from": {
       "data": {
-        "url": "https://cheryl-neoh.github.io/FIT3179/Assignment 2/Data/2018-TotalCrimes.csv"
+        "url": "https://cheryl-neoh.github.io/FIT3179/Assignment 2/Data/2017-TotalCrimes.csv"
       },
       "key": "id",
-      "fields": ["Rate per 100,000 people", "Year", "Total cases"]
+      "fields": ["Rate per 100,000 people", "Year", "Total cases"],
+      "transform" : { "filter": "datum.Year == ${slider.value}"}
     }
   }],
   "projection": {
