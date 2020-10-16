@@ -9,6 +9,13 @@
       "feature": "states"
     }
   },
+  "signals": [
+    {
+      "name": "Year",
+      "bind": {"input": "YearFilter", "min": 2017, "max": 2019, "step": 1},
+      "value": 2017
+    }
+  ],
   "transform": [{
     "lookup": "id",
     "from": {
@@ -17,7 +24,7 @@
       },
       "key": "id",
       "fields": ["Rate per 100,000 people", "Year", "Total cases"],
-      "transform" : { "filter": "datum.Year == ${slider.value}"}
+      "transform" : { "filter": "datum.Year == YearFilter ? 0.5 : 0"}
     }
   }],
   "projection": {
