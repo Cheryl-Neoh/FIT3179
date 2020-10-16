@@ -4,33 +4,61 @@
   "height": 600,
   "data": {
     "url": "https://cheryl-neoh.github.io/FIT3179/Assignment 2/Data/Malaysian-states.json",
-    "format": {
-      "type": "topojson",
-      "feature": "states"
-    }
+    "format": {"type": "topojson", "feature": "states"}
   },
-  "transform": [{
-    "lookup": "id",
-    "from": {
-      "data": {"url": "https://cheryl-neoh.github.io/FIT3179/Assignment 2/Data/2017-TotalCrimes.csv"},
-      "key": "id",
-      "fields": ["Rate per 100,000 people", "Year", "Total cases"]
-    }
-  }],
-  "projection": {
-    "type": "mercator"
+    "selection": {
+    "highlight": {"type": "single", "empty": "none", "on": "mouseover"},
+    "select": {"type": "multi"}
   },
-  "mark": "geoshape",
+  "transform": [
+    {
+      "lookup": "id",
+      "from": {
+        "data": {
+          "url": "https://cheryl-neoh.github.io/FIT3179/Assignment 2/Data/2017-TotalCrimes.csv"
+        },
+        "key": "id",
+        "fields": ["Rate per 100,000 people", "Year", "Total cases"]
+      }
+    }
+  ],
+  "projection": {"type": "mercator"},
+  "mark": {
+    "type": "geoshape",
+    "stroke": "#757575",
+    "strokeWidth": 0.8
+  },
   "encoding": {
-    "color": {
-      "field": "Rate per 100,000 people",
-      "type": "quantitative"
-    },
+    "color": {"field": "Rate per 100,000 people", "type": "quantitative"},
     "tooltip": [
       {"field": "id", "type": "nominal", "title": "Country"},
       {"field": "Rate per 100,000 people", "type": "quantitative"},
       {"field": "Total cases", "type": "quantitative"},
       {"field": "Year", "type": "quantitative"}
-    ]
+    ],
+    "fillOpacity": {
+      "condition": {"selection": "select", "value": 1},
+      "value": 0.3
+    },
+    "strokeWidth": {
+      "condition": [
+        {
+          "test": {
+            "and": [
+              {"selection": "select"},
+              "length(data(\"select_store\"))"
+            ]
+          },
+          "value": 2
+        },
+        {"selection": "highlight", "value": 1}
+      ],
+      "value": 0
+    }
+  },
+  "config": {
+  "view": {
+     "stroke": "transparent"
+  }
   }
 }
