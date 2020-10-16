@@ -11,8 +11,8 @@
   },
   "signals": [
     {
-      "name": "Year",
-      "bind": {"input": "YearFilter", "min": 2017, "max": 2019, "step": 1},
+      "name": "YearFilter",
+      "bind": {"input": "range", "min": 2017, "max": 2019, "step": 1},
       "value": 2017
     }
   ],
