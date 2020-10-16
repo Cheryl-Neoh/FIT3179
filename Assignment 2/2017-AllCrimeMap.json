@@ -2,13 +2,6 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "width": 800,
   "height": 600,
-  "signals": [
-    {
-      "name": "YearFilter",
-      "bind": {"input": "range", "min": 2017, "max": 2019, "step": 1},
-      "value": 2017
-    }
-  ],
   "data": {
     "url": "https://cheryl-neoh.github.io/FIT3179/Assignment 2/Data/Malaysian-states.json",
     "format": {
@@ -19,13 +12,10 @@
   "transform": [{
     "lookup": "id",
     "from": {
-      "data": {
-        "url": "https://cheryl-neoh.github.io/FIT3179/Assignment 2/Data/2017-TotalCrimes.csv"
-      },
+      "data": {"url": "https://cheryl-neoh.github.io/FIT3179/Assignment 2/Data/2017-TotalCrimes.csv"},
       "key": "id",
       "fields": ["Rate per 100,000 people", "Year", "Total cases"]
-    }, 
-    "filter": "datum.Year == YearFilter ? 0.5 : 0"
+    }
   }],
   "projection": {
     "type": "mercator"
