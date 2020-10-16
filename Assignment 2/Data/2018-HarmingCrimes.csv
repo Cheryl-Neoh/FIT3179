@@ -1,29 +1,15 @@
 Type of crime,id,Year,Number of cases,"Rate per 100,000 people"
-Unarmed Group Robbery,Johor,2018,740,19.36
-Unarmed Group Robbery,Johor,2018,330,8.63
-Unarmed Group Robbery,Kedah,2018,353,16.0
-Unarmed Group Robbery,Kedah,2018,169,7.66
-Unarmed Group Robbery,Kelantan,2018,139,7.38
-Unarmed Group Robbery,Kelantan,2018,71,3.77
-Unarmed Group Robbery,Kuala Lumpur,2018,1344,68.16
-Unarmed Group Robbery,Kuala Lumpur,2018,1124,57.01
-Unarmed Group Robbery,Melaka,2018,175,18.72
-Unarmed Group Robbery,Melaka,2018,183,19.58
-Unarmed Group Robbery,Negeri Sembilan,2018,288,25.24
-Unarmed Group Robbery,Negeri Sembilan,2018,187,16.39
-Unarmed Group Robbery,Pahang,2018,164,9.63
-Unarmed Group Robbery,Pahang,2018,90,5.29
-Unarmed Group Robbery,Perak,2018,365,14.21
-Unarmed Group Robbery,Perak,2018,142,5.53
-Unarmed Group Robbery,Perlis,2018,17,6.56
-Unarmed Group Robbery,Perlis,2018,33,12.74
-Unarmed Group Robbery,Penang,2018,301,17.03
-Unarmed Group Robbery,Penang,2018,200,11.32
-Unarmed Group Robbery,Sabah,2018,71,1.77
-Unarmed Group Robbery,Sabah,2018,77,1.92
-Unarmed Group Robbery,Sarawak,2018,214,7.56
-Unarmed Group Robbery,Sarawak,2018,88,3.11
-Unarmed Group Robbery,Selangor,2018,2314,35.55
-Unarmed Group Robbery,Selangor,2018,952,14.63
-Unarmed Group Robbery,Terengganu,2018,58,4.66
-Unarmed Group Robbery,Terengganu,2018,42,3.37
+Harming,Johor,2018,578,15.12
+Harming,Kedah,2018,337,15.28
+Harming,Kelantan,2018,190,10.08
+Harming,Kuala Lumpur,2018,520,26.37
+Harming,Melaka,2018,198,21.18
+Harming,Negeri Sembilan,2018,249,21.82
+Harming,Pahang,2018,199,11.69
+Harming,Perak,2018,358,13.93
+Harming,Perlis,2018,45,17.37
+Harming,Penang,2018,295,16.69
+Harming,Sabah,2018,216,5.37
+Harming,Sarawak,2018,358,12.65
+Harming,Selangor,2018,993,15.26
+Harming,Terengganu,2018,124,9.96

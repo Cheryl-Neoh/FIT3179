@@ -1,15 +1,15 @@
-Type of crime,id,Year,Number of cases,"Rate per 100,000 people"
-Armed Group Robbery,Johor,2018,2,0.05
-Armed Group Robbery,Kedah,2018,2,0.09
-Armed Group Robbery,Kelantan,2018,4,0.21
-Armed Group Robbery,Kuala Lumpur,2018,3,0.15
-Armed Group Robbery,Melaka,2018,1,0.11
-Armed Group Robbery,Negeri Sembilan,2018,0,0.0
-Armed Group Robbery,Pahang,2018,2,0.12
-Armed Group Robbery,Perak,2018,1,0.04
-Armed Group Robbery,Perlis,2018,0,0.0
-Armed Group Robbery,Penang,2018,0,0.0
-Armed Group Robbery,Sabah,2018,1,0.02
-Armed Group Robbery,Sarawak,2018,3,0.11
-Armed Group Robbery,Selangor,2018,11,0.17
-Armed Group Robbery,Terengganu,2018,1,0.08
+id,Year,Number of cases,"Rate per 100,000 people",Type of crime
+Johor,2018,7219,188.83,All Theft
+Kedah,2018,4102,185.95,All Theft
+Kelantan,2018,2777,147.37,All Theft
+Kuala Lumpur,2018,7886,399.95,All Theft
+Melaka,2018,1588,169.89999999999998,All Theft
+Negeri Sembilan,2018,1969,172.58999999999997,All Theft
+Pahang,2018,2151,126.31999999999998,All Theft
+Penang,2018,3272,185.16000000000003,All Theft
+Perak,2018,3100,120.65,All Theft
+Perlis,2018,383,147.81000000000003,All Theft
+Sabah,2018,3690,91.80000000000001,All Theft
+Sarawak,2018,3522,124.47,All Theft
+Selangor,2018,13247,203.52,All Theft
+Terengganu,2018,1112,89.27999999999999,All Theft

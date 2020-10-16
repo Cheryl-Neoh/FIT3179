@@ -1,15 +1,15 @@
 Type of crime,id,Year,Number of cases,"Rate per 100,000 people"
-Harming,Johor,2018,578,15.12
-Harming,Kedah,2018,337,15.28
-Harming,Kelantan,2018,190,10.08
-Harming,Kuala Lumpur,2018,520,26.37
-Harming,Melaka,2018,198,21.18
-Harming,Negeri Sembilan,2018,249,21.82
-Harming,Pahang,2018,199,11.69
-Harming,Perak,2018,358,13.93
-Harming,Perlis,2018,45,17.37
-Harming,Penang,2018,295,16.69
-Harming,Sabah,2018,216,5.37
-Harming,Sarawak,2018,358,12.65
-Harming,Selangor,2018,993,15.26
-Harming,Terengganu,2018,124,9.96
+Drug addicts,Johor,2018,2352,61.52
+Drug addicts,Kedah,2018,2693,122.08
+Drug addicts,Kelantan,2018,4153,229.38
+Drug addicts,Kuala Lumpur,2018,1255,63.65
+Drug addicts,Melaka,2018,736,78.74
+Drug addicts,Negeri Sembilan,2018,1374,120.43
+Drug addicts,Pahang,2018,1749,102.71
+Drug addicts,Perak,2018,1820,70.83
+Drug addicts,Perlis,2018,582,224.62
+Drug addicts,Penang,2018,2303,130.32
+Drug addicts,Sabah,2018,1272,31.64
+Drug addicts,Sarawak,2018,693,24.49
+Drug addicts,Selangor,2018,2228,34.23
+Drug addicts,Terengganu,2018,2057,165.17

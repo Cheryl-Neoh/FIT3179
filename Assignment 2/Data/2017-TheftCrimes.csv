@@ -1,15 +1,15 @@
 Type of crime,id,Year,Number of cases,"Rate per 100,000 people"
-Armed Robbery,Johor,2017,0,0.0
-Armed Robbery,Kedah,2017,0,0.0
-Armed Robbery,Kelantan,2017,0,0.0
-Armed Robbery,Kuala Lumpur,2017,0,0.0
-Armed Robbery,Melaka,2017,0,0.0
-Armed Robbery,Negeri Sembilan,2017,0,0.0
-Armed Robbery,Pahang,2017,0,0.0
-Armed Robbery,Perak,2017,0,0.0
-Armed Robbery,Perlis,2017,0,0.0
-Armed Robbery,Penang,2017,0,0.0
-Armed Robbery,Sabah,2017,0,0.0
-Armed Robbery,Sarawak,2017,1,0.04
-Armed Robbery,Selangor,2017,2,0.03
-Armed Robbery,Terengganu,2017,0,0.0
+Theft ( Others ),Johor,2017,2043,54.18
+Theft ( Others ),Kedah,2017,1108,50.93
+Theft ( Others ),Kelantan,2017,547,29.61
+Theft ( Others ),Kuala Lumpur,2017,3128,160.12
+Theft ( Others ),Melaka,2017,448,48.62
+Theft ( Others ),Negeri Sembilan,2017,1121,99.28
+Theft ( Others ),Pahang,2017,712,42.41
+Theft ( Others ),Perak,2017,1013,39.75
+Theft ( Others ),Perlis,2017,182,70.98
+Theft ( Others ),Penang,2017,861,49.29
+Theft ( Others ),Sabah,2017,2541,64.28
+Theft ( Others ),Sarawak,2017,1284,46.03
+Theft ( Others ),Selangor,2017,4091,63.91
+Theft ( Others ),Terengganu,2017,365,29.88
