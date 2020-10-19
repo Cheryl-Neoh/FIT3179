@@ -13,7 +13,6 @@ Sabah,2017,6236,157.77
 Sarawak,2017,6381,228.75
 Selangor,2017,26069,407.26
 Terengganu,2017,2257,184.76
-id,Year,Total cases,"Rate per 100,000 people"
 Johor,2018,10338,270.42
 Kedah,2018,6221,282.00
 Kelantan,2018,3987,211.57
@@ -28,7 +27,6 @@ Sabah,2018,6151,153.02
 Sarawak,2018,5830,206.04
 Selangor,2018,21420,329.07
 Terengganu,2018,1823,146.38
-id,Year,Total cases,"Rate per 100,000 people"
 Johor,2019,9870,254.74
 Kedah,2019,5615,251.04
 Kelantan,2019,3546,184.52
