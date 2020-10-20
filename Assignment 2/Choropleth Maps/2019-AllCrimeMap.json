@@ -33,8 +33,7 @@
     "width": 600,
     "height": 400,
     "selection": {
-      "highlight": {"type": "single", "empty": "none", "on": "mouseover"},
-      "select": {"type": "multi"}
+      "highlight": {"type": "single", "empty": "none", "on": "mouseover"}    
     },
     "transform": [
       {
@@ -48,7 +47,7 @@
         }
       }
     ],
-    "projection": {"type": "mercator"},
+    "projection": {"type": "equalEarth"},
     "mark": {"type": "geoshape", "stroke": "#757575", "strokeWidth": 0.8},
     "encoding": {
       "color": {"field": "Rate per 100,000 people", "type": "quantitative",
@@ -63,18 +62,8 @@
         {"field": "Total cases", "type": "quantitative"},
         {"field": "Year", "type": "quantitative"}
       ],
-      "fillOpacity": {
-        "condition": {"selection": "select", "value": 1},
-        "value": 0.3
-      },
       "strokeWidth": {
         "condition": [
-          {
-            "test": {
-              "and": [{"selection": "select"}, "length(data(\"select_store\"))"]
-            },
-            "value": 2
-          },
           {"selection": "highlight", "value": 1}
         ],
         "value": 0
