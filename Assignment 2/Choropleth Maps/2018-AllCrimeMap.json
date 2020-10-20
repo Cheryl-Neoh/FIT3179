@@ -25,6 +25,13 @@
       "url": "https://cheryl-neoh.github.io/FIT3179/Assignment 2/Data/Malaysian-states.json",
       "format": {"type": "topojson", "feature": "states"}
     },
+    "title": {
+      "text": "Crime rates around Malaysia",
+      "fontSize": 18,
+      "offset": 20
+    },
+    "width": 600,
+    "height": 400,
     "selection": {
       "highlight": {"type": "single", "empty": "none", "on": "mouseover"},
       "select": {"type": "multi"}
@@ -44,7 +51,12 @@
     "projection": {"type": "mercator"},
     "mark": {"type": "geoshape", "stroke": "#757575", "strokeWidth": 0.8},
     "encoding": {
-      "color": {"field": "Rate per 100,000 people", "type": "quantitative"},
+      "color": {"field": "Rate per 100,000 people", "type": "quantitative",
+        "legend": {
+          "labelFontSize":12,
+          "titleFontSize":15
+        }
+      },
       "tooltip": [
         {"field": "id", "type": "nominal", "title": "Country"},
         {"field": "Rate per 100,000 people", "type": "quantitative"},
@@ -73,6 +85,8 @@
     "data": {
     "url": "https://cheryl-neoh.github.io/FIT3179/Assignment 2/Data/AllYearCrimeRates.csv"
     },
+    "width": "container",
+    "height": 300,
     "transform": [
       {
         "sort": [{"field": "Rate per 100,000 people", "order": "descending"}],
@@ -83,12 +97,27 @@
     ],
     "layer": [
       { 
-        "encoding": {
-          "x": {"field": "Year", "type": "ordinal"},
-          "y": {"field": "rank", "type": "ordinal"},
-          "color": {"field": "id", "type": "nominal"}
-        },
-        "layer": [{"mark": "line"}]
+        "layer": [
+          {
+            "mark": "line",
+            "selection": {
+                "legend_highlight1":{
+                  "type": "multi",
+                  "fields": ["id"],
+                  "bind": "legend"
+                }
+            },
+            "encoding": {
+            "x": {"field": "Year", "type": "ordinal"},
+            "y": {"field": "rank", "type": "ordinal"},
+            "color": {"field": "id", "type": "nominal"},
+            "opacity": {
+              "condition": {"selection": "legend_highlight1", "value": 0.8},
+              "value": 0.1
+            }
+            }
+          }
+        ]
       },
       {
         "mark": {"type": "rule", "orient": "vertical"},
@@ -120,21 +149,33 @@
           "condition": {"value": 0.3, "selection": "hover"},
           "value": 0
         }
-          
         }
       },
       {
         "mark": {"type": "point", "orient": "vertical"},
+
         "encoding": {
           "x": {"field": "Year", "type": "ordinal"},
           "y": {"field": "rank", "type": "ordinal"},
-          "color": {"field": "id", "type": "nominal"},
+          "color": {"field": "id", "type": "nominal", "legend": {
+            "title": "State",
+            "symbolSize": 40,
+            "labelFontSize": 12,
+            "titleFontSize": 15
+          }},
           "opacity": {
-            "condition": {"selection": "legend_highlight", "value": 0.6},
-            "value": 0.2
+            "condition": {"selection": "legend_highlight", "value": 0.8},
+            "value": 0.1
           }
+        },
+        "title": { 
+          "text": "Rank of the most unsafe state in Malaysia",
+          "fontSize": 18,
+          "offset": 20,
+          "fontStyle": ""
         }
       }
     ]
-  }]
+  }],
+  "center": 1
 }
