@@ -1,4 +1,4 @@
-Type of crime,id,Year,Total cases,"Rate per 100,000 people"
+Type_of_crime,id,Year,Total cases,"Rate per 100,000 people"
 All crime,Johor,2017,11307,299.9
 All crime,Kedah,2017,6759,310.73
 All crime,Kelantan,2017,4520,244.67
