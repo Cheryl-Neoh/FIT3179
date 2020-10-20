@@ -22,7 +22,7 @@
       }
     }
   ],
-  "projection": {"type": "mercator"},
+  "projection": {"type": "equalEarth"},
   "mark": {
     "type": "geoshape",
     "stroke": "#757575",
