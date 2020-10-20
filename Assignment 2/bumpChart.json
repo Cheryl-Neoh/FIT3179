@@ -1,0 +1,115 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "params": [
+    {
+      "name": "Current_Crime",
+      "value": "All crime",
+      "bind":{
+        "input": "select",
+        "options":[
+              "All crime", 
+              "Murder", 
+              "Rape", 
+              "Robbery",
+              "Harming", 
+              "Theft",
+              "Drug addicts", 
+              "House break-ins"
+            ],
+        "name": "Type of crime: "
+      }
+    }
+  ],
+  "data": {
+  "url": "https://cheryl-neoh.github.io/FIT3179/Assignment 2/Data/AllYearCrimeRates.csv"
+  },
+  "width": "container",
+  "height": 300,
+  "transform": [
+    {
+      "sort": [{"field": "Rate per 100,000 people", "order": "descending"}],
+      "window": [{"op": "rank", "as": "rank"}],
+      "groupby": ["Year", "Type"]
+    },
+    { "filter": "datum.Type == Current_Crime"}
+  ],
+  "layer": [
+    { 
+      "mark": "line",
+      "selection": {
+          "legend_highlight1":{
+            "type": "multi",
+            "fields": ["id"],
+            "bind": "legend"
+          }
+      },
+      "encoding": {
+        "x": {"field": "Year", "type": "ordinal"},
+        "y": {"field": "rank", "type": "ordinal"},
+        "color": {"field": "id", "type": "nominal"},
+        "opacity": {
+          "condition": {"selection": "legend_highlight1", "value": 0.8},
+          "value": 0.1
+        }
+      }
+    },
+    {
+      "mark": {"type": "rule", "orient": "vertical"},
+      "selection": {
+        "hover": {
+          "type": "single",
+          "fields": ["Year"],
+          "nearest": true,
+          "on": "mouseover",
+          "empty": "none",
+          "clear": "mouseout"
+        },         
+        "legend_highlight":{
+          "type": "multi",
+          "fields": ["id"],
+          "bind": "legend"
+        }
+      },
+      "encoding": {
+        "x": {"field": "Year", "type": "ordinal"},
+        "y": {"field": "rank", "type": "ordinal"},
+        "color": {"field": "id", "type": "nominal"},
+        "tooltip": [
+          {"field": "id", "type": "nominal", "title": "State"},
+          {"field": "Year", "type": "nominal"},
+          {"field": "rank", "type": "nominal", "title": "Rank"}
+        ],
+      "opacity": {
+        "condition": {"value": 0.3, "selection": "hover"},
+        "value": 0
+      }
+      }
+    },
+    {
+      "mark": {"type": "point", "orient": "vertical"},
+      "encoding": {
+        "x": {"field": "Year", "type": "ordinal"},
+        "y": {"field": "rank", "type": "ordinal"},
+        "color": {
+          "field": "id", 
+          "type": "nominal", 
+          "legend": {
+            "title": "State",
+            "symbolSize": 40,
+            "labelFontSize": 12,
+            "titleFontSize": 15
+          }
+        },
+        "opacity": {
+          "condition": {"selection": "legend_highlight", "value": 0.8},
+          "value": 0.1
+        }
+      },
+      "title": { 
+        "text": "Most unsafe state in Malaysia according to rank",
+        "fontSize": 18,
+        "offset": 20
+      }
+    }
+  ]
+}
