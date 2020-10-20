@@ -23,8 +23,8 @@
   "data": {
   "url": "https://cheryl-neoh.github.io/FIT3179/Assignment 2/Data/AllYearCrimeRates.csv"
   },
-  "width": "container",
-  "height": 300,
+  "width": 300,
+  "height": 500,
   "transform": [
     {
       "sort": [{"field": "Rate per 100,000 people", "order": "descending"}],
