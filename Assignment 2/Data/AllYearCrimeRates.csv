@@ -1,46 +1,46 @@
 Type,id,Year,Total cases,"Rate per 100,000 people"
-All crime,Johor,2017,11307,299.9
-All crime,Kedah,2017,6759,310.73
-All crime,Kelantan,2017,4520,244.67
-All crime,Kuala Lumpur,2017,13482,690.15
-All crime,Melaka,2017,3097,336.12
-All crime,Negeri Sembilan,2017,3973,351.87
-All crime,Pahang,2017,3607,214.82
-All crime,Perak,2017,5326,209.03
-All crime,Perlis,2017,603,235.18
-All crime,Penang,2017,5551,317.8
-All crime,Sabah,2017,6236,157.77
-All crime,Sarawak,2017,6381,228.75
-All crime,Selangor,2017,26069,407.26
-All crime,Terengganu,2017,2257,184.76
-All crime,Johor,2018,10338,270.42
-All crime,Kedah,2018,6221,282
-All crime,Kelantan,2018,3987,211.57
-All crime,Kuala Lumpur,2018,12127,615.05
-All crime,Melaka,2018,2800,299.56
-All crime,Negeri Sembilan,2018,3673,321.94
-All crime,Pahang,2018,3584,210.48
-All crime,Perak,2018,5128,199.58
-All crime,Perlis,2018,563,217.29
-All crime,Penang,2018,5017,283.9
-All crime,Sabah,2018,6151,153.02
-All crime,Sarawak,2018,5830,206.04
-All crime,Selangor,2018,21420,329.07
-All crime,Terengganu,2018,1823,146.38
-All crime,Johor,2019,9870,254.74
-All crime,Kedah,2019,5615,251.04
-All crime,Kelantan,2019,3546,184.52
-All crime,Kuala Lumpur,2019,11178,562.02
-All crime,Melaka,2019,2561,270.29
-All crime,Negeri Sembilan,2019,3332,289.24
-All crime,Pahang,2019,3272,189.53
-All crime,Perak,2019,4911,189.55
-All crime,Perlis,2019,527,201.15
-All crime,Penang,2019,5220,292.11
-All crime,Sabah,2019,5744,140.61
-All crime,Sarawak,2019,6023,209.98
-All crime,Selangor,2019,19806,299.45
-All crime,Terengganu,2019,1870,147.29
+All Crime,Johor,2017,11307,299.9
+All Crime,Kedah,2017,6759,310.73
+All Crime,Kelantan,2017,4520,244.67
+All Crime,Kuala Lumpur,2017,13482,690.15
+All Crime,Melaka,2017,3097,336.12
+All Crime,Negeri Sembilan,2017,3973,351.87
+All Crime,Pahang,2017,3607,214.82
+All Crime,Perak,2017,5326,209.03
+All Crime,Perlis,2017,603,235.18
+All Crime,Penang,2017,5551,317.8
+All Crime,Sabah,2017,6236,157.77
+All Crime,Sarawak,2017,6381,228.75
+All Crime,Selangor,2017,26069,407.26
+All Crime,Terengganu,2017,2257,184.76
+All Crime,Johor,2018,10338,270.42
+All Crime,Kedah,2018,6221,282
+All Crime,Kelantan,2018,3987,211.57
+All Crime,Kuala Lumpur,2018,12127,615.05
+All Crime,Melaka,2018,2800,299.56
+All Crime,Negeri Sembilan,2018,3673,321.94
+All Crime,Pahang,2018,3584,210.48
+All Crime,Perak,2018,5128,199.58
+All Crime,Perlis,2018,563,217.29
+All Crime,Penang,2018,5017,283.9
+All Crime,Sabah,2018,6151,153.02
+All Crime,Sarawak,2018,5830,206.04
+All Crime,Selangor,2018,21420,329.07
+All Crime,Terengganu,2018,1823,146.38
+All Crime,Johor,2019,9870,254.74
+All Crime,Kedah,2019,5615,251.04
+All Crime,Kelantan,2019,3546,184.52
+All Crime,Kuala Lumpur,2019,11178,562.02
+All Crime,Melaka,2019,2561,270.29
+All Crime,Negeri Sembilan,2019,3332,289.24
+All Crime,Pahang,2019,3272,189.53
+All Crime,Perak,2019,4911,189.55
+All Crime,Perlis,2019,527,201.15
+All Crime,Penang,2019,5220,292.11
+All Crime,Sabah,2019,5744,140.61
+All Crime,Sarawak,2019,6023,209.98
+All Crime,Selangor,2019,19806,299.45
+All Crime,Terengganu,2019,1870,147.29
 Murder,Johor,2017,66,1.75
 Rape,Johor,2017,196,5.2
 Harming,Johor,2017,614,16.29
