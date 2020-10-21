@@ -1,0 +1,68 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "width":300,
+  "height":300,
+  "params": [
+    {
+      "name": "Current_State",
+      "value": "Johor",
+      "bind": {
+        "input": "select",
+        "options": [
+          "Johor",
+          "Kedah",
+          "Kelantan",
+          "Kuala Lumpur",
+          "Melaka",
+          "Negeri Sembilan",
+          "Pahang",
+          "Penang",
+          "Perak",
+          "Perlis",
+          "Sabah",
+          "Sarawak",
+          "Selangor",
+          "Terengganu"
+        ],
+        "name": "States: "
+      }
+    },
+    {
+      "name": "Current_Year",
+      "value": 2017,
+      "bind": {
+        "input": "range",
+        "min": 2017,
+        "max": 2019,
+        "step": 1,
+        "name": "Year: "
+      }
+    }
+  ],  
+  "data": {
+    "url": "https://cheryl-neoh.github.io/FIT3179/Assignment 2/Data/AllYearCrimeRates.csv"
+  },
+  "transform": [
+    {"filter": "datum.Year == Current_Year"},
+    {"filter": "datum.Type !== 'All Crime'"},
+    {"filter": "datum.id == Current_State"}
+  ],
+  "layer": [{
+    "mark": {"type": "arc", "innerRadius": 20, "stroke": "#fff"}
+  },{
+    "mark": {"type": "text", "radiusOffset": 10},
+    "encoding": {
+      "text": {"field": "Rate per 100,000 people", "type": "quantitative"}
+    }
+  }],
+  "encoding": {
+    "theta": {"field": "Rate per 100,000 people", "type": "quantitative", "stack": true},
+    "radius": {"field": "Rate per 100,000 people", "scale": {"type": "sqrt", "zero": true, "rangeMin": 20}},
+    "color": {"field": "Rate per 100,000 people", "type": "nominal", "legend": null},
+    "tooltip": [
+      { "field":"Type", "type": "nominal"},
+      { "field":"Total cases", "type": "quantitative"}
+    ]
+  },
+  "view": {"stroke": null}
+}
