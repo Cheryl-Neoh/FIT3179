@@ -33,7 +33,12 @@
     {"filter": "datum.id == Current_State"}
   ],
   "encoding": {
-    "x": {"field": "Year", "type": "ordinal", "title": "Year"},
+    "x": {"field": "Year", "type": "ordinal", "title": "Year",
+      "scale": {
+        "domain": [2017, 2018, 2019],
+        "range": [1,200]
+      }
+    },
     "y": {"field": "Rate per 100,000 people", "type": "quantitative", "title": "Rate per 100,000 people" },
     "color": {
       "condition": {
@@ -90,7 +95,8 @@
       "cell": {
         "stroke": "transparent"
       }
+    },
+    "axisX": {
     }
   }
 }
-
