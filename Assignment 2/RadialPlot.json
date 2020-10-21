@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "width":300,
-  "height":300,
+  "width": 300,
+  "height": 300,
   "params": [
     {
       "name": "Current_State",
@@ -38,31 +38,76 @@
         "name": "Year: "
       }
     }
-  ],  
+  ],
   "data": {
     "url": "https://cheryl-neoh.github.io/FIT3179/Assignment 2/Data/AllYearCrimeRates.csv"
   },
   "transform": [
     {"filter": "datum.Year == Current_Year"},
     {"filter": "datum.Type !== 'All Crime'"},
-    {"filter": "datum.id == Current_State"}
-  ],
-  "layer": [{
-    "mark": {"type": "arc", "innerRadius": 20, "stroke": "#fff"}
-  },{
-    "mark": {"type": "text", "radiusOffset": 10},
-    "encoding": {
-      "text": {"field": "Rate per 100,000 people", "type": "quantitative"}
+    {"filter": "datum.id == Current_State"},
+    { "joinaggregate": [{
+      "op": "sum",
+      "field": "Total cases",
+      "as": "Total"
+    }]},
+    {
+      "calculate": "round(datum['Total cases']/datum.Total * 100)",
+      "as": "Percentage"
     }
-  }],
+  ],
+  "layer": [
+    {"mark": {"type": "arc", "innerRadius": 20, "stroke":"gray", "strokeWidth":1}},
+    {
+      "selection": {
+        "highlight": {"type": "single", "empty": "none", "on": "mouseover"},
+        "select": {"type": "multi"}
+      },
+      "mark": {"type": "text", "radiusOffset": 20, "stroke":"black"},
+      "encoding": {
+        "text": {"field": "Rate per 100,000 people"},
+        "fillOpacity": {
+          "condition": {"selection": "highlight", "value": 1},
+          "value": 1
+        }
+      }
+    }
+  ],
   "encoding": {
-    "theta": {"field": "Rate per 100,000 people", "type": "quantitative", "stack": true},
-    "radius": {"field": "Rate per 100,000 people", "scale": {"type": "sqrt", "zero": true, "rangeMin": 20}},
-    "color": {"field": "Rate per 100,000 people", "type": "nominal", "legend": null},
+    "theta": {
+      "field": "Rate per 100,000 people",
+      "type": "quantitative",
+      "stack": true
+    },
+    "radius": {
+      "field": "Rate per 100,000 people",
+      "scale": {"type": "sqrt", "zero": true, "rangeMin": 20, "range":[1,120]}
+    },
+    "color": {
+      "field": "Type",
+      "type": "nominal",
+      "legend": null
+    },
     "tooltip": [
-      { "field":"Type", "type": "nominal"},
-      { "field":"Total cases", "type": "quantitative"}
-    ]
+      {"field": "Type", "type": "nominal"},
+      {"field": "Total cases", "type": "quantitative"},
+      {"field": "Rate per 100,000 people", "type": "quantitative"}
+    ],
+    "fillOpacity": {
+      "condition": {"selection": "highlight", "value": 1},
+      "value": 0.8
+    },
+    "strokeWidth": {
+      "condition": [
+        {"selection": "highlight", "value": 1}
+      ],
+      "value": 0.2
+    }
   },
-  "view": {"stroke": null}
+  "view": {
+    "stroke": null
+  },
+  "config": {
+    "background": "snow"
+  }
 }
