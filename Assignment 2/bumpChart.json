@@ -23,8 +23,8 @@
   "data": {
   "url": "https://cheryl-neoh.github.io/FIT3179/Assignment 2/Data/AllYearCrimeRates.csv"
   },
-  "width": 300,
-  "height": 500,
+  "width": 150,
+  "height": 350,
   "transform": [
     {
       "sort": [{"field": "Rate per 100,000 people", "order": "descending"}],
@@ -33,6 +33,10 @@
     },
     { "filter": "datum.Type == Current_Crime"}
   ],
+  "encoding": {
+    "x": {"field": "Year", "type": "ordinal"},
+    "y": {"field": "rank", "type": "ordinal", "axis": {"grid": true, "tickBand": "extent"}}
+  },
   "layer": [
     { 
       "mark": "line",
@@ -44,8 +48,6 @@
           }
       },
       "encoding": {
-        "x": {"field": "Year", "type": "ordinal"},
-        "y": {"field": "rank", "type": "ordinal"},
         "color": {"field": "id", "type": "nominal"},
         "opacity": {
           "condition": {"selection": "legend_highlight1", "value": 0.8},
@@ -71,8 +73,6 @@
         }
       },
       "encoding": {
-        "x": {"field": "Year", "type": "ordinal"},
-        "y": {"field": "rank", "type": "ordinal"},
         "color": {"field": "id", "type": "nominal"},
         "tooltip": [
           {"field": "id", "type": "nominal", "title": "State"},
@@ -88,8 +88,6 @@
     {
       "mark": {"type": "point", "orient": "vertical"},
       "encoding": {
-        "x": {"field": "Year", "type": "ordinal"},
-        "y": {"field": "rank", "type": "ordinal"},
         "color": {
           "field": "id", 
           "type": "nominal", 
@@ -97,7 +95,8 @@
             "title": "State",
             "symbolSize": 40,
             "labelFontSize": 12,
-            "titleFontSize": 15
+            "titleFontSize": 15,
+            "orient": "left"
           }
         },
         "opacity": {
@@ -109,6 +108,23 @@
         "text": "Most unsafe state in Malaysia according to rank",
         "fontSize": 18,
         "offset": 20
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 10,
+        "fontStyle": "italic"
+      },
+      "encoding": {
+        "text": { "field": "id"},
+        "opacity":{
+          "condition":{
+            "test": "datum.Year == 2019", "value":1
+          },
+          "value": 0
+        }
       }
     }
   ]
