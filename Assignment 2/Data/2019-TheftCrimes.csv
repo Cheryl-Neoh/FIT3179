@@ -1,15 +1,15 @@
 Type of crime,id,Year,Number of cases,"Rate per 100,000 people"
-Theft ( Others ),Johor,2019,1912,49.35
-Theft ( Others ),Kedah,2019,956,42.74
-Theft ( Others ),Kelantan,2019,757,39.39
-Theft ( Others ),Kuala Lumpur,2019,2733,137.41
-Theft ( Others ),Melaka,2019,593,62.59
-Theft ( Others ),Negeri Sembilan,2019,945,82.03
-Theft ( Others ),Pahang,2019,1086,62.91
-Theft ( Others ),Perak,2019,1091,42.11
-Theft ( Others ),Perlis,2019,187,71.37
-Theft ( Others ),Penang,2019,1035,57.92
-Theft ( Others ),Sabah,2019,2626,64.28
-Theft ( Others ),Sarawak,2019,1644,57.31
-Theft ( Others ),Selangor,2019,3519,53.2
-Theft ( Others ),Terengganu,2019,524,41.27
+Theft,Johor,2019,1912,49.35
+Theft,Kedah,2019,956,42.74
+Theft,Kelantan,2019,757,39.39
+Theft,Kuala Lumpur,2019,2733,137.41
+Theft,Melaka,2019,593,62.59
+Theft,Negeri Sembilan,2019,945,82.03
+Theft,Pahang,2019,1086,62.91
+Theft,Perak,2019,1091,42.11
+Theft,Perlis,2019,187,71.37
+Theft,Penang,2019,1035,57.92
+Theft,Sabah,2019,2626,64.28
+Theft,Sarawak,2019,1644,57.31
+Theft,Selangor,2019,3519,53.2
+Theft,Terengganu,2019,524,41.27

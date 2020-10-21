@@ -1,15 +1,15 @@
-id,Year,Number of cases,"Rate per 100,000 people",Type of crime
-Johor,2019,6583,169.91,All Theft
-Kedah,2019,3540,158.27,All Theft
-Kelantan,2019,2147,111.72000000000001,All Theft
-Kuala Lumpur,2019,7174,360.69999999999993,All Theft
-Melaka,2019,1420,149.87,All Theft
-Negeri Sembilan,2019,1789,155.29999999999998,All Theft
-Pahang,2019,1958,113.42,All Theft
-Penang,2019,3127,174.99,All Theft
-Perak,2019,2746,105.99,All Theft
-Perlis,2019,295,112.59,All Theft
-Sabah,2019,3300,80.77000000000001,All Theft
-Sarawak,2019,3502,122.08,All Theft
-Selangor,2019,11821,178.72000000000003,All Theft
-Terengganu,2019,1081,85.13000000000001,All Theft
+Type of crime,id,Year,Number of cases,"Rate per 100,000 people"
+Robbery,Johor,2019,6583,169.91
+Robbery,Kedah,2019,3540,158.27
+Robbery,Kelantan,2019,2147,111.72
+Robbery,Kuala Lumpur,2019,7174,360.7
+Robbery,Melaka,2019,1420,149.87
+Robbery,Negeri Sembilan,2019,1789,155.3
+Robbery,Pahang,2019,1958,113.42
+Robbery,Penang,2019,3127,174.99
+Robbery,Perak,2019,2746,105.99
+Robbery,Perlis,2019,295,112.59
+Robbery,Sabah,2019,3300,80.77
+Robbery,Sarawak,2019,3502,122.08
+Robbery,Selangor,2019,11821,178.72
+Robbery,Terengganu,2019,1081,85.13
