@@ -9,13 +9,16 @@
     "fontSize": 18,
     "offset": 20
   },
-  "width": 600,
-  "height": 400,
+  "width": 500,
+  "height": 250,
   "selection": {
     "highlight": {
-      "type": "single", 
+      "type": "multi", 
       "empty": "none", 
-      "on": "mouseover"}    
+      "on": "mouseover"},
+    "highlight1":{
+      "type": "multi"
+    } 
   },
   "transform": [
     {
@@ -36,6 +39,10 @@
       "legend": {
         "labelFontSize":12,
         "titleFontSize":15
+      },
+      "scale":{
+        "type": "threshold",
+        "domain": [150, 200, 250, 300, 550]
       }
     },
     "tooltip": [
@@ -48,7 +55,7 @@
       "condition": [
         {"selection": "highlight", "value": 1}
       ],
-      "value": 0
+      "value": 0.3
     }
   }
 }
