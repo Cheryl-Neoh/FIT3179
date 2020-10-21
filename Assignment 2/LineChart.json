@@ -1,0 +1,96 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "data": {"url": "https://cheryl-neoh.github.io/FIT3179/Assignment 2/Data/AllYearCrimeRates.csv"},
+  "width": 250,
+  "height": 250,
+  "params": [
+    {
+      "name": "Current_State",
+      "value": "Johor",
+      "bind": {
+        "input": "select",
+        "options": [
+          "Johor",
+          "Kedah",
+          "Kelantan",
+          "Kuala Lumpur",
+          "Melaka",
+          "Negeri Sembilan",
+          "Pahang",
+          "Penang",
+          "Perak",
+          "Perlis",
+          "Sabah",
+          "Sarawak",
+          "Selangor",
+          "Terengganu"
+        ],
+        "name": "States: "
+      }
+    }
+  ],
+  "transform": [
+    {"filter": "datum.id == Current_State"}
+  ],
+  "encoding": {
+    "x": {"field": "Year", "type": "ordinal", "title": "Year"},
+    "y": {"field": "Rate per 100,000 people", "type": "quantitative", "title": "Rate per 100,000 people" },
+    "color": {
+      "condition": {
+        "selection": "hover",
+        "field":"Type",
+        "type":"nominal",
+        "legend": null
+      },
+      "value": "grey"
+    },
+    "opacity": {
+      "condition": {
+        "selection": "hover",
+        "value": 1
+      },
+      "value": 0.2
+    }
+  },
+  "layer": [
+    {
+      "selection": {
+        "grid": {
+          "type": "interval", "bind": "scales"
+        },
+        "hover": {
+          "type": "single",
+          "on": "mouseover",
+          "empty": "all",
+          "fields": ["Type"],
+          "init": {"Type": "All crime"}
+        }
+      },
+      "mark": {"type": "line", "strokeWidth": 8, "stroke": "transparent"}
+    },
+    {
+      "mark": "line"
+    },
+    {
+    "encoding": {
+      "x": {"aggregate": "max", "field": "Year"},
+      "y": {"aggregate": {"argmax": "Year"}, "field": "Rate per 100,000 people"}
+    },
+    "layer": [{
+      "mark": {"type": "circle"}
+    }, {
+      "mark": {"type": "text", "align": "left", "dx": 4},
+      "encoding": {"text": {"field":"Type", "type": "nominal"}}
+    }]
+    }
+  ],
+  "config": {
+    "background": "snow",
+    "style": {
+      "cell": {
+        "stroke": "transparent"
+      }
+    }
+  }
+}
+
