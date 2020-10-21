@@ -25,7 +25,7 @@
       "lookup": "id",
       "from": {
         "data": {
-          "url": "https://cheryl-neoh.github.io/FIT3179/Assignment 2/Data/2018-TotalCrimes.csv"
+          "url": "https://cheryl-neoh.github.io/FIT3179/Assignment 2/Data/2017-TotalCrimes.csv"
         },
         "key": "id",
         "fields": ["Rate per 100,000 people", "Year", "Total cases"]
@@ -37,12 +37,19 @@
   "encoding": {
     "color": {"field": "Rate per 100,000 people", "type": "quantitative",
       "legend": {
+        "title": ["Rate per","100,000", "people"],
         "labelFontSize":12,
-        "titleFontSize":15
+        "titleFontSize":12
       },
       "scale":{
         "type": "threshold",
-        "domain": [150, 200, 250, 300, 550]
+        "domain": [150, 200, 250, 300, 550],
+        "range": ["#fef0d9",
+          "#fdd49e",
+          "#fdbb84",
+          "#fc8d59",
+          "#e34a33",
+          "#b30000"]
       }
     },
     "tooltip": [
