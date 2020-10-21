@@ -41,7 +41,7 @@
     "offset": 20
   },
   "width": 500,
-  "height": 250,
+  "height": 400,
   "selection": {
     "highlight": {"type": "multi", "empty": "none", "on": "mouseover"},
     "highlight1": {"type": "multi"}
