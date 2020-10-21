@@ -99,7 +99,7 @@
             "title": "State",
             "symbolSize": 30,
             "labelFontSize": 12,
-            "titleFontSize": 15,
+            "titleFontSize": 12,
             "orient": "left"
           }
         },
