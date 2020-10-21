@@ -45,16 +45,15 @@
     {
       "mark": "line",
       "selection": {
-        "legend_highlight1": {
+        "highlight1": {
           "type": "multi",
-          "fields": ["id"],
-          "bind": "legend"
+          "fields": ["id"]
         }
       },
       "encoding": {
         "color": {"field": "id", "type": "nominal"},
         "opacity": {
-          "condition": {"selection": "legend_highlight1", "value": 0.8},
+          "condition": {"selection": "highlight1", "value": 0.8},
           "value": 0.1
         }
       }
@@ -70,10 +69,9 @@
           "empty": "none",
           "clear": "mouseout"
         },
-        "legend_highlight": {
+        "highlight": {
           "type": "multi",
-          "fields": ["id"],
-          "bind": "legend"
+          "fields": ["id"]
         }
       },
       "encoding": {
@@ -84,7 +82,7 @@
           {"field": "rank", "type": "nominal", "title": "Rank"}
         ],
         "opacity": {
-          "condition": {"value": 0.3, "selection": "hover"},
+          "condition": {"value": 1, "selection": "hover"},
           "value": 0
         }
       }
@@ -95,16 +93,10 @@
         "color": {
           "field": "id",
           "type": "nominal",
-          "legend": {
-            "title": "State",
-            "symbolSize": 30,
-            "labelFontSize": 12,
-            "titleFontSize": 12,
-            "orient": "left"
-          }
+          "legend": null
         },
         "opacity": {
-          "condition": {"selection": "legend_highlight", "value": 0.8},
+          "condition": {"selection": "highlight", "value": 0.8},
           "value": 0.1
         }
       },
@@ -125,8 +117,8 @@
         "text": { "field": "id"},
         "opacity":{
           "condition": {
-            "selection": "legend_highlight", "value": 1},
-            "value": 0
+            "selection": "highlight", "value": 1},
+            "value": 0.2
         },
         "fillOpacity":{
           "condition": {
