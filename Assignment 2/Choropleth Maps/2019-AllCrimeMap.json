@@ -12,13 +12,8 @@
   "width": 500,
   "height": 250,
   "selection": {
-    "highlight": {
-      "type": "multi", 
-      "empty": "none", 
-      "on": "mouseover"},
-    "highlight1":{
-      "type": "multi"
-    } 
+    "highlight": {"type": "multi", "empty": "none", "on": "mouseover"},
+    "highlight1": {"type": "multi"}
   },
   "transform": [
     {
@@ -35,21 +30,25 @@
   "projection": {"type": "equalEarth"},
   "mark": {"type": "geoshape", "stroke": "#757575", "strokeWidth": 0.8},
   "encoding": {
-    "color": {"field": "Rate per 100,000 people", "type": "quantitative",
+    "color": {
+      "field": "Rate per 100,000 people",
+      "type": "quantitative",
       "legend": {
-        "title": ["Rate per","100,000", "people"],
-        "labelFontSize":12,
-        "titleFontSize":12
+        "title": ["Rate per", "100,000", "people"],
+        "labelFontSize": 12,
+        "titleFontSize": 12
       },
-      "scale":{
+      "scale": {
         "type": "threshold",
         "domain": [150, 200, 250, 300, 550],
-        "range": ["#fef0d9",
+        "range": [
+          "#fef0d9",
           "#fdd49e",
           "#fdbb84",
           "#fc8d59",
           "#e34a33",
-          "#b30000"]
+          "#b30000"
+        ]
       }
     },
     "tooltip": [
@@ -59,10 +58,16 @@
       {"field": "Year", "type": "quantitative"}
     ],
     "strokeWidth": {
-      "condition": [
-        {"selection": "highlight", "value": 1}
-      ],
+      "condition": [{"selection": "highlight", "value": 1}],
       "value": 0.3
+    }
+  },
+  "config": {
+    "background": "snow",
+    "style": {
+      "cell":{
+        "stroke": "transparent"
+      }
     }
   }
 }
