@@ -67,8 +67,7 @@
           "type": "single",
           "on": "mouseover",
           "empty": "all",
-          "fields": ["Type"],
-          "init": {"Type": "All crime"}
+          "fields": ["Type"]
         }
       },
       "mark": {"type": "line", "strokeWidth": 8, "stroke": "transparent"}
