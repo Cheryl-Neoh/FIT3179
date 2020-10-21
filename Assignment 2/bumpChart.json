@@ -2,12 +2,12 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "params": [
     {
-      "name": "Current_Crime",
-      "value": "All crime",
+      "name": "Current_Type",
+      "value": "All Crime",
       "bind": {
         "input": "select",
         "options": [
-          "All crime",
+          "All Crime",
           "Murder",
           "Rape",
           "Robbery",
@@ -32,7 +32,7 @@
       "window": [{"op": "rank", "as": "rank"}],
       "groupby": ["Year", "Type"]
     },
-    {"filter": "datum.Type == Current_Crime"}
+    {"filter": "datum.Type == Current_Type"}
   ],
   "encoding": {
     "x": {"field": "Year", "type": "ordinal"},
