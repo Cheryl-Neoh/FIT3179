@@ -26,30 +26,40 @@
   "width": 150,
   "height": 350,
   "transform": [
+    {"filter": "datum.Type == Current_Type"},
     {
-      "sort": [{"field": "Rate per 100,000 people", "order": "descending"},
-              {"field": "Total cases", "order": "descending"}],
-      "window": [{"op": "rank", "as": "rank"}],
-      "groupby": ["Year", "Type"]
+      "calculate": "1*datum['Rate per 100,000 people']", "as": "Rate"
     },
-    {"filter": "datum.Type == Current_Type"}
+    {
+      "calculate": "1*datum['Total cases']", "as": "Total"
+    },
+    { 
+      "sort": [
+        {
+          "field": "Rate", 
+          "order": "descending"
+        },
+        {
+          "field": "Total",
+          "order": "descending"
+        }
+      ],
+      "window": [{
+        "op": "rank",
+        "as": "Rank"
+        }],
+      "groupby": ["Year"],
+      "frame": [null, null]
+    }
   ],
   "encoding": {
     "x": {"field": "Year", "type": "ordinal"},
-    "y": {
-      "field": "rank",
-      "type": "ordinal"
-    }
+    "y": {"field": "Rank", "type": "ordinal"}
   },
   "layer": [
     {
       "mark": "line",
-      "selection": {
-        "highlight1": {
-          "type": "multi",
-          "fields": ["id"]
-        }
-      },
+      "selection": {"highlight1": {"type": "multi", "fields": ["id"]}},
       "encoding": {
         "color": {"field": "id", "type": "nominal"},
         "opacity": {
@@ -69,32 +79,22 @@
           "empty": "none",
           "clear": "mouseout"
         },
-        "highlight": {
-          "type": "multi",
-          "fields": ["id"]
-        }
+        "highlight": {"type": "multi", "fields": ["id"]}
       },
       "encoding": {
         "color": {"field": "id", "type": "nominal"},
         "tooltip": [
           {"field": "id", "type": "nominal", "title": "State"},
           {"field": "Year", "type": "nominal"},
-          {"field": "rank", "type": "nominal", "title": "Rank"}
+          {"field": "Rank", "type": "nominal", "title": "Rank"}
         ],
-        "opacity": {
-          "condition": {"value": 1, "selection": "hover"},
-          "value": 0
-        }
+        "opacity": {"condition": {"value": 1, "selection": "hover"}, "value": 0}
       }
     },
     {
       "mark": {"type": "circle", "orient": "vertical"},
       "encoding": {
-        "color": {
-          "field": "id",
-          "type": "nominal",
-          "legend": null
-        },
+        "color": {"field": "id", "type": "nominal", "legend": null},
         "opacity": {
           "condition": {"selection": "highlight", "value": 0.8},
           "value": 0.1
@@ -114,32 +114,22 @@
         "fontStyle": "italic"
       },
       "encoding": {
-        "text": { "field": "id"},
-        "opacity":{
-          "condition": {
-            "selection": "highlight", "value": 1},
-            "value": 0.2
+        "text": {"field": "id"},
+        "opacity": {
+          "condition": {"selection": "highlight", "value": 1},
+          "value": 0.2
         },
-        "fillOpacity":{
-          "condition": {
-            "test": "datum.Year == 2019", "value": 1},
-            "value": 0
+        "fillOpacity": {
+          "condition": {"test": "datum.Year == 2019", "value": 1},
+          "value": 0
         }
       }
     }
   ],
   "config": {
     "background": "snow",
-    "style": {
-      "cell": {
-        "stroke": "transparent"
-      }
-    },
-    "line": {
-      "strokeWidth": 4
-    },
-    "circle": {
-      "size": 100
-    }
+    "style": {"cell": {"stroke": "transparent"}},
+    "line": {"strokeWidth": 4},
+    "circle": {"size": 100}
   }
 }
