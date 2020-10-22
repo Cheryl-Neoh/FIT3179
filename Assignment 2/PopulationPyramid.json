@@ -43,9 +43,11 @@
     {"filter": "datum.Year == Current_Year"},
     {"calculate": "datum.Gender == 'P' ? 'Female' : 'Male'", "as": "gender"}
   ],
-  "spacing": 0,
+  "spacing": 10,
   "hconcat": [
     {
+      "width":250,
+      "height": 300,
       "selection":{
         "highlight": {"type": "single", "empty": "none", "on": "mouseover"}
       },
@@ -86,8 +88,10 @@
           {"field":"Number of Drug addicts", "type": "quantitative"}
         ]
       }
-    }, {
+    }, 
+    {
       "width": 20,
+      "height": 300,
       "view": {"stroke": null},
       "mark": {
         "type": "text",
@@ -99,6 +103,8 @@
       }
     }, 
     {
+      "width": 250,
+      "height": 300,
       "selection":{
         "highlight": {"type": "single", "empty": "none", "on": "mouseover"}
       },
