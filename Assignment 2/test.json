@@ -63,7 +63,10 @@
                     "data": {
                         "url": "https://cheryl-neoh.github.io/FIT3179/Assignment 2/Data/AllYearCrimeRates.csv"
                     },
-                    "title": ["Crime rates from 2017 to 2019","according to states"],
+                    "title": [
+                        "Crime rates from 2017 to 2019",
+                        "according to states"
+                    ],
                     "width": 200,
                     "height": 280,
                     "transform": [
@@ -195,7 +198,7 @@
                                 "type": "text",
                                 "fontWeight": "bold",
                                 "size": 20,
-                                "align":"left"
+                                "align": "left"
                             },
                             "encoding": {
                                 "text": {
@@ -316,10 +319,9 @@
                             "field": "Rate per 100,000 people",
                             "type": "quantitative",
                             "legend": {
-                                "orient":  "top",
+                                "orient": "top",
                                 "offset": -20
-                            },
-                            "scale": {}
+                            }
                         },
                         "tooltip": [
                             {
@@ -344,6 +346,7 @@
                     }
                 },
                 {
+                    "spacing": 50,
                     "hconcat": [
                         {
                             "data": {
@@ -432,7 +435,19 @@
                                 "color": {
                                     "field": "Type",
                                     "type": "nominal",
-                                    "legend": null
+                                    "legend": null,
+                                    "scale": {
+                                        "range": [
+                                            "orange",
+                                            "red",
+                                            "lightblue",
+                                            "green",
+                                            "pink",
+                                            "green",
+                                            "yellow",
+                                            "purple"
+                                        ]
+                                    }
                                 },
                                 "tooltip": [
                                     {
@@ -609,7 +624,10 @@
                                         }
                                     },
                                     "title": {
-                                        "text": ["Rank of the most", "dangerous states"],
+                                        "text": [
+                                            "Rank of the most",
+                                            "dangerous states"
+                                        ],
                                         "fontSize": 18,
                                         "offset": 20
                                     }
@@ -690,6 +708,10 @@
                     ]
                 }
             ]
+        },
+        {
+            "mark": "text",
+            "width": "container"
         }
     ],
     "config": {
@@ -699,8 +721,6 @@
                 "stroke": "transparent"
             }
         },
-        "circle": {
-            
-        }
+        "circle": {}
     }
 }
