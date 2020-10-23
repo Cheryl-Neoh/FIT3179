@@ -32,6 +32,8 @@
   "data": {
     "url": "https://cheryl-neoh.github.io/FIT3179/Assignment 2/Data/AllYearCrimeRates.csv"
   },
+  "width": 400,
+  "height": 300,
   "transform": [
     {"filter": "datum.id == Current_State"},
     {
