@@ -1,0 +1,81 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "title": {
+      "text":["Rounded average crime rates for each","Type of Crime and State" ,"from 2017-2019"]
+      },
+  "params": [
+    {
+      "name": "Current_State",
+      "value": "Johor",
+      "bind": {
+        "input": "select",
+        "options": [
+          "Johor",
+          "Kedah",
+          "Kelantan",
+          "Kuala Lumpur",
+          "Melaka",
+          "Negeri Sembilan",
+          "Pahang",
+          "Penang",
+          "Perak",
+          "Perlis",
+          "Sabah",
+          "Sarawak",
+          "Selangor",
+          "Terengganu"
+        ],
+        "name": "States: "
+      }
+    }
+  ],
+  "data": {
+    "url": "https://cheryl-neoh.github.io/FIT3179/Assignment 2/Data/AllYearCrimeRates.csv"
+  },
+  "transform": [
+    {"filter": "datum.id == Current_State"},
+    {
+      "joinaggregate": [
+        {"op": "mean", "as": "Average", "field": "Rate per 100,000 people"}
+      ],
+      "groupby": ["Type"]
+    }
+  ],
+  "encoding": {
+    "y": {"field": "Type", "type": "nominal"},
+    "x": {"field": "Rate per 100,000 people", "type": "quantitative"},
+    "color": {"field": "Year", "legend": null},
+    "tooltip": [
+      {"field": "Year"},
+      {"field": "Type"},
+      {"field": "Rate per 100,000 people"}
+    ]
+  },
+  "layer": [
+    {"mark": {"type": "bar", "strokeWidth": 8, "stroke": "transparent"}},
+    {"mark": {"type": "bar"}},
+    {
+      "layer": [
+        {
+          "transform": [
+            {"calculate": "round(datum.Average)", "as": "roundedAverage"}
+          ],
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "middle",
+            "dx":30,
+            "stroke": "black"
+          },
+          "encoding": {
+            "text": {"field": "roundedAverage", "type": "quantitative"},
+            "opacity": {
+              "condition": [{"test": "datum.Year == 2019", "value": 1}],
+              "value": 0
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
