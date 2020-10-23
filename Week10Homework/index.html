@@ -9,11 +9,20 @@
 </head>
 <body>
 
+<h1>Homework Week 10</h2>
+<h2>This is the first visualisation</h2>
 <div id="vis"></div>
+<h2>This is the first visualisation</h2>
+<div id="vis_sb"></div>
 
 <script type="text/javascript">
   var spec = "https://Cheryl-Neoh.github.io/FIT3179/Week9Homework/2017CrimeRateMalaysiaMap.json";
   vegaEmbed('#vis', spec).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+  
+  var sb_pec = "https://Cheryl-Neoh.github.io/FIT3179/Week10Homework/StackedBarChart.json";
+  vegaEmbed('#vis_sb', sb_pec).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
 </script>
