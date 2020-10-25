@@ -439,21 +439,9 @@
                                             }
                                         },
                                         "color": {
-                                            "field": "Type",
+                                            "field": "Rate per 100,000 people",
                                             "type": "nominal",
-                                            "legend": null,
-                                            "scale": {
-                                                "range": [
-                                                    "orange",
-                                                    "red",
-                                                    "lightblue",
-                                                    "green",
-                                                    "pink",
-                                                    "green",
-                                                    "yellow",
-                                                    "purple"
-                                                ]
-                                            }
+                                            "legend": null
                                         },
                                         "tooltip": [
                                             {
