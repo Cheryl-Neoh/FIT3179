@@ -51,7 +51,7 @@
       "spacing": 10,
       "hconcat": [
         {
-          "width": 250,
+          "width": 200,
           "height": 300,
           "selection": {
             "highlight_poppyramid": {
@@ -103,7 +103,7 @@
           }
         },
         {
-          "width": 250,
+          "width": 200,
           "height": 300,
           "selection": {
             "highlight_poppyramid1": {
