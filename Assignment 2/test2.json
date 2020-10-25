@@ -74,7 +74,6 @@
             },
             "color": {
               "field": "gender",
-              "scale": {"range": ["#c1bbdd", "#c1e7e3"]},
               "legend": null
             },
             "strokeOpacity": {
