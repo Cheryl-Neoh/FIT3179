@@ -1,0 +1,28 @@
+body {background-color:Snow;}
+
+    .header {
+      padding: 20px;
+      text-align: center;
+      background: #64c2af;
+      color: white;
+    }
+
+    p.dashed{
+      border-style: dashed;
+      padding: 15px;
+      font-family: 	Georgia, 'Times New Roman', Times, serif;
+      font-size: 28px;
+      border-radius: 20px;
+      width: 1000px;
+      margin: auto;
+    }
+
+    /* Align the filters of each visualisation to the top */
+    .vega-bindings {
+      color: black;
+      font: 15px verdana,
+      sans-serif;
+      position: absolute;
+      left: 200px;
+      top: -65px;
+    }
