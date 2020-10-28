@@ -41,11 +41,12 @@
     {"mark": "text", "width": 150},
     {
       "data": {
-        "url": "https://cheryl-neoh.github.io/FIT3179/Assignment 2/Data/Age, Gender and state of drug addicts.csv"
+        "url": "https://cheryl-neoh.github.io/FIT3179/Assignment 2/Data/Age, Gender and state of drug addicts.csv",
+        "name": "population_pyramid"
       },
-      "title": { 
-        "text" : "Population of Drug Addicts",
-        "align":  "center",
+      "title": {
+        "text": "Population of Drug Addicts",
+        "align": "center",
         "fontSize": 15
       },
       "transform": [
@@ -56,41 +57,62 @@
       "spacing": 10,
       "hconcat": [
         {
-          "width": 200,
-          "height": 300,
-          "selection": {
-            "highlight_poppyramid": {
-              "type": "single",
-              "empty": "none",
-              "on": "mouseover"
+          "transform": [
+            {"filter": {"field": "gender", "equal": "Female"}},
+            {
+              "joinaggregate": [
+                {"op": "sum", "field": "Number of Drug addicts", "as": "Total"}
+              ]
             }
-          },
-          "transform": [{"filter": {"field": "gender", "equal": "Female"}}],
-          "title": "Female",
-          "mark": {"type": "bar", "stroke": "black"},
-          "encoding": {
-            "y": {"field": "Age", "axis": null, "sort": "descending"},
-            "x": {
-              "aggregate": "sum",
-              "field": "Number of Drug addicts",
-              "title": "Number of Drug addicts",
-              "axis": {"format": "s"},
-              "sort": "descending"
+          ],
+          "layer": [
+            {
+              "width": 200,
+              "height": 300,
+              "selection": {
+                "highlight_poppyramid": {
+                  "type": "single",
+                  "empty": "none",
+                  "on": "mouseover"
+                }
+              },
+              "title": "Female",
+              "mark": {"type": "bar", "stroke": "black"},
+              "encoding": {
+                "y": {"field": "Age", "axis": null, "sort": "descending"},
+                "x": {
+                  "aggregate": "sum",
+                  "field": "Number of Drug addicts",
+                  "title": "Number of Drug addicts",
+                  "axis": {"format": "s"},
+                  "sort": "descending"
+                },
+                "color": {"field": "gender", "legend": null},
+                "strokeOpacity": {
+                  "condition": [
+                    {"selection": "highlight_poppyramid", "value": 1}
+                  ],
+                  "value": 0.2
+                },
+                "tooltip": [
+                  {"field": "gender", "type": "nominal"},
+                  {"field": "Age", "type": "ordinal"},
+                  {"field": "Number of Drug addicts", "type": "quantitative"}
+                ]
+              }
             },
-            "color": {
-              "field": "gender",
-              "legend": null
+            {
+              "mark": {"type": "text", "size": 15, "yOffset": 80},
+              "encoding": {"text": {"field": "Total", "type": "quantitative"}}
             },
-            "strokeOpacity": {
-              "condition": [{"selection": "highlight_poppyramid", "value": 1}],
-              "value": 0.2
-            },
-            "tooltip": [
-              {"field": "gender", "type": "nominal"},
-              {"field": "Age", "type": "ordinal"},
-              {"field": "Number of Drug addicts", "type": "quantitative"}
-            ]
-          }
+            {
+              "data": {
+                "values": [{"text": ["female Drug addicts", "in total"]}]
+              },
+              "mark": {"type": "text", "size": 13, "yOffset": 100},
+              "encoding": {"text": {"field": "text"}}
+            }
+          ]
         },
         {
           "width": 20,
@@ -108,42 +130,70 @@
           }
         },
         {
-          "width": 200,
-          "height": 300,
-          "selection": {
-            "highlight_poppyramid1": {
-              "type": "single",
-              "empty": "none",
-              "on": "mouseover"
+          "transform": [
+            {"filter": {"field": "gender", "equal": "Male"}},
+            {
+              "joinaggregate": [
+                {
+                  "op": "sum",
+                  "field": "Number of Drug addicts",
+                  "as": "Totalmale"
+                }
+              ]
             }
-          },
-          "transform": [{"filter": {"field": "gender", "equal": "Male"}}],
-          "title": "Male",
-          "mark": {"type": "bar", "stroke": "black"},
-          "encoding": {
-            "y": {
-              "field": "Age",
-              "title": null,
-              "axis": null,
-              "sort": "descending"
+          ],
+          "layer": [
+            {
+              "width": 200,
+              "height": 300,
+              "selection": {
+                "highlight_poppyramid1": {
+                  "type": "single",
+                  "empty": "none",
+                  "on": "mouseover"
+                }
+              },
+              "title": "Male",
+              "mark": {"type": "bar", "stroke": "black"},
+              "encoding": {
+                "y": {
+                  "field": "Age",
+                  "title": null,
+                  "axis": null,
+                  "sort": "descending"
+                },
+                "x": {
+                  "aggregate": "sum",
+                  "field": "Number of Drug addicts",
+                  "title": "Number of Drug addicts",
+                  "axis": {"format": "s"}
+                },
+                "color": {"field": "gender", "legend": null},
+                "strokeOpacity": {
+                  "condition": [
+                    {"selection": "highlight_poppyramid1", "value": 1}
+                  ],
+                  "value": 0.2
+                },
+                "tooltip": [
+                  {"field": "gender", "type": "nominal"},
+                  {"field": "Age", "type": "ordinal"},
+                  {"field": "Number of Drug addicts", "type": "quantitative"}
+                ]
+              }
             },
-            "x": {
-              "aggregate": "sum",
-              "field": "Number of Drug addicts",
-              "title": "Number of Drug addicts",
-              "axis": {"format": "s"}
+            {
+              "mark": {"type": "text", "size": 15, "yOffset": 80, "xOffset": 18},
+              "encoding": {
+                "text": {"field": "Totalmale", "type": "quantitative"}
+              }
             },
-            "color": {"field": "gender", "legend": null},
-            "strokeOpacity": {
-              "condition": [{"selection": "highlight_poppyramid1", "value": 1}],
-              "value": 0.2
-            },
-            "tooltip": [
-              {"field": "gender", "type": "nominal"},
-              {"field": "Age", "type": "ordinal"},
-              {"field": "Number of Drug addicts", "type": "quantitative"}
-            ]
-          }
+            {
+              "data": {"values": [{"text": ["male Drug addicts", "in total"]}]},
+              "mark": {"type": "text", "size": 13, "yOffset": 100, "xOffset": 18},
+              "encoding": {"text": {"field": "text"}}
+            }
+          ]
         }
       ]
     },
@@ -187,10 +237,7 @@
       },
       "width": 300,
       "height": 300,
-      "title":{
-        "text": ["Education level", "of Drug Addicts"],
-        "fontSize":15
-      },
+      "title": {"text": ["Education level", "of Drug Addicts"], "fontSize": 15},
       "layer": [
         {
           "transform": [{"filter": "datum.Year == Current_Year"}],
