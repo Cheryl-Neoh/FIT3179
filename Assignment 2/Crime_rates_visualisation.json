@@ -69,10 +69,13 @@
                             "data": {
                                 "url": "https://cheryl-neoh.github.io/FIT3179/Assignment 2/Data/AllYearCrimeRates.csv"
                             },
-                            "title": [
+                            "title": {
+                                "text" : [
                                 "Crime rates from 2017 to 2019",
                                 "according to states"
-                            ],
+                                ],
+                                "fontSize": 15
+                            },
                             "width": 200,
                             "height": 280,
                             "transform": [
@@ -358,6 +361,10 @@
                                     "data": {
                                         "url": "https://cheryl-neoh.github.io/FIT3179/Assignment 2/Data/AllYearCrimeRates.csv"
                                     },
+                                    "title":{
+                                        "text" : ["Proportion of crime rates", "according to states"],
+                                        "fontSize": 15
+                                    },
                                     "width": 50,
                                     "height": 300,
                                     "transform": [
@@ -622,7 +629,7 @@
                                                     "Rank of the most",
                                                     "dangerous states"
                                                 ],
-                                                "fontSize": 18,
+                                                "fontSize": 15,
                                                 "offset": 20
                                             }
                                         },

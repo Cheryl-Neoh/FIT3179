@@ -43,6 +43,11 @@
       "data": {
         "url": "https://cheryl-neoh.github.io/FIT3179/Assignment 2/Data/Age, Gender and state of drug addicts.csv"
       },
+      "title": { 
+        "text" : "Population of Drug Addicts",
+        "align":  "center",
+        "fontSize": 15
+      },
       "transform": [
         {"filter": "datum.id == Current_State"},
         {"filter": "datum.Year == Current_Year"},
@@ -182,6 +187,10 @@
       },
       "width": 300,
       "height": 300,
+      "title":{
+        "text": ["Education level", "of Drug Addicts"],
+        "fontSize":15
+      },
       "layer": [
         {
           "transform": [{"filter": "datum.Year == Current_Year"}],
@@ -267,6 +276,6 @@
   "config": {
     "view": {"stroke": null},
     "axis": {"grid": false},
-    "background": "azure"
+    "background": "snow"
   }
 }
