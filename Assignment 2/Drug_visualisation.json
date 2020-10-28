@@ -362,7 +362,7 @@
         }
       ]
     },
-    {"mark": "text", "width": 150}
+    {"mark": "text", "width": 100}
   ],
   "config": {
     "view": {"stroke": null},
