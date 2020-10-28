@@ -38,15 +38,15 @@
     }
   ],
   "hconcat": [
-    {"mark": "text", "width": 150},
+    {"mark": "text", "width": 100},
     {
       "data": {
         "url": "https://cheryl-neoh.github.io/FIT3179/Assignment 2/Data/Age, Gender and state of drug addicts.csv",
         "name": "population_pyramid"
       },
       "title": {
-        "text": "Population of Drug Addicts",
-        "align": "center",
+        "text": "Gender Differences in Drug Abuse according to Gender",
+        "align": "left",
         "fontSize": 15
       },
       "transform": [
@@ -54,7 +54,7 @@
         {"filter": "datum.Year == Current_Year"},
         {"calculate": "datum.Gender == 'P' ? 'Female' : 'Male'", "as": "gender"}
       ],
-      "spacing": 10,
+      "spacing": 2,
       "hconcat": [
         {
           "transform": [
@@ -183,14 +183,24 @@
               }
             },
             {
-              "mark": {"type": "text", "size": 15, "yOffset": 80, "xOffset": 18},
+              "mark": {
+                "type": "text",
+                "size": 15,
+                "yOffset": 80,
+                "xOffset": 18
+              },
               "encoding": {
                 "text": {"field": "Totalmale", "type": "quantitative"}
               }
             },
             {
               "data": {"values": [{"text": ["male Drug addicts", "in total"]}]},
-              "mark": {"type": "text", "size": 13, "yOffset": 100, "xOffset": 18},
+              "mark": {
+                "type": "text",
+                "size": 13,
+                "yOffset": 100,
+                "xOffset": 18
+              },
               "encoding": {"text": {"field": "text"}}
             }
           ]
@@ -201,34 +211,56 @@
       "data": {
         "values": [
           {
-            "title": "THIS IS TITLE",
-            "description": [
-              "wsxddfwqklwjefdddddddddd",
-              "sdgkdfjgkrwkejrskdfjkedddd",
-              "wjrtjnsdfskdkfksksdfjekjddd",
-              "jfkejkjkfjkdsjfskdfjkejkfk",
-              "fsdfshfkjsdhkfjshkdfhsnddd",
-              "kwjrtjnsdfskdkfksksdfjekjsad",
-              "dkwjrtjnsdfskdkfksksdfjekjsad",
-              "dkwjrtjnsdfskdkfksksdfjekjsad"
+            "author1": "- National Institute on Drug Abuse, April 2020",
+            "description1": [
+              "For most age groups, men have higher rates of use",
+              "or dependence on illicit drugs and alcohol than do",
+              "women. However, women are just as likely as men to",
+              "develop a substance use disorder. In addition,",
+              "women may be more susceptible to craving and",
+              "relapse which are key phases of the addiction cycle."
+            ],
+            "author2": "- Farik Zolkepli, Dec 2018",
+            "description2": [
+              "On 2018, it was reported that there was a high",
+              "usage of drugs among highschool student in",
+              "Malaysia. The number of illicit drugs have",
+              "increased and the syndicates have became",
+              "more creative in catering to their customers"
             ]
           }
         ]
       },
       "vconcat": [
         {
-          "mark": {
-            "type": "text",
-            "fontWeight": "bold",
-            "size": 20,
-            "align": "left"
-          },
-          "encoding": {"text": {"field": "title"}}
+          "mark": {"type": "text", "size": 15, "align": "left"},
+          "encoding": {"text": {"field": "description1"}}
         },
         {
-          "mark": {"type": "text", "size": 15, "align": "left"},
-          "encoding": {"text": {"field": "description"}}
-        }
+          "mark": {
+            "type": "text",
+            "size": 15,
+            "align": "left",
+            "fontStyle": "italic",
+            "fontWeight": "bold"
+          },
+          "encoding": {"text": {"field": "author1"}}
+        },
+        {
+          "mark": {"type": "text", "size": 15, "align": "right", "dx": 400},
+          "encoding": {"text": {"field": "description2"}}
+        },
+        {
+          "mark": {
+            "type": "text",
+            "size": 15,
+            "align": "right",
+            "fontStyle": "italic",
+            "fontWeight": "bold",
+            "dx": 400
+          },
+          "encoding": {"text": {"field": "author2"}}
+        },
       ]
     },
     {
@@ -237,7 +269,10 @@
       },
       "width": 300,
       "height": 300,
-      "title": {"text": ["Education level", "of Drug Addicts"], "fontSize": 15},
+      "title": {
+        "text": ["Relationship of Education level", "and Drug Addiction"],
+        "fontSize": 15
+      },
       "layer": [
         {
           "transform": [{"filter": "datum.Year == Current_Year"}],
