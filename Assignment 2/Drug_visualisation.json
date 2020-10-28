@@ -267,6 +267,6 @@
   "config": {
     "view": {"stroke": null},
     "axis": {"grid": false},
-    "background": "azure"
+    "background": "snow"
   }
 }
