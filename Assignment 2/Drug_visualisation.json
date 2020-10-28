@@ -38,7 +38,7 @@
     }
   ],
   "hconcat": [
-    {"mark": "text", "width": 150},
+    {"mark": "text", "width": 100},
     {
       "data": {
         "url": "https://cheryl-neoh.github.io/FIT3179/Assignment 2/Data/Age, Gender and state of drug addicts.csv",
