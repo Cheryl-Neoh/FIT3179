@@ -38,7 +38,7 @@
     }
   ],
   "hconcat": [
-    {"mark": "text", "width": 100},
+    {"mark": "text", "width": 150},
     {
       "data": {
         "url": "https://cheryl-neoh.github.io/FIT3179/Assignment 2/Data/Age, Gender and state of drug addicts.csv",
@@ -47,7 +47,9 @@
       "title": {
         "text": "Gender Differences in Drug Abuse according to Gender",
         "align": "left",
-        "fontSize": 15
+        "fontSize": 15,
+        "dy": -20,
+        "dx": 20
       },
       "transform": [
         {"filter": "datum.id == Current_State"},
@@ -233,7 +235,7 @@
       },
       "vconcat": [
         {
-          "mark": {"type": "text", "size": 15, "align": "left"},
+          "mark": {"type": "text", "size": 15, "align": "left", "dy": -55},
           "encoding": {"text": {"field": "description1"}}
         },
         {
@@ -247,7 +249,13 @@
           "encoding": {"text": {"field": "author1"}}
         },
         {
-          "mark": {"type": "text", "size": 15, "align": "right", "dx": 410},
+          "mark": {
+            "type": "text",
+            "size": 15,
+            "align": "right",
+            "dx": 410,
+            "dy": 50
+          },
           "encoding": {"text": {"field": "description2"}}
         },
         {
@@ -270,8 +278,9 @@
       "width": 300,
       "height": 300,
       "title": {
-        "text": ["Relationship of Education level", "and Drug Addiction"],
-        "fontSize": 15
+        "text": ["Relationship of Education level", "with Drug Addiction"],
+        "fontSize": 15,
+        "dy": 40
       },
       "layer": [
         {
