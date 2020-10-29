@@ -37,6 +37,7 @@
       }
     }
   ],
+  "spacing": 40,
   "hconcat": [
     {"mark": "text", "width": 150},
     {
