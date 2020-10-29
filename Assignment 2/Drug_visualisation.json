@@ -363,8 +363,7 @@
           "encoding": {"text": {"field": "title2"}}
         }
       ]
-    },
-    {"mark": "text", "width": 80}
+    }
   ],
   "config": {
     "view": {"stroke": null},
