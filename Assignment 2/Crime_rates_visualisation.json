@@ -258,6 +258,16 @@
                   {
                     "calculate": "datum[Current_Year+Current_Type+'Rate']",
                     "as": "Rate per 100,000 people"
+                  },
+                  {
+                    "calculate": "datum[Current_Year+Current_Type+'Cases']",
+                    "as": "Number of cases"
+                  },
+                  {
+                    "calculate": "Current_Year", "as": "Year"
+                  },
+                  {
+                    "calculate": "Current_Type", "as": "Type"
                   }
                 ],
                 "projection": {"type": "equalEarth"},
@@ -274,7 +284,10 @@
                   },
                   "tooltip": [
                     {"field": "id", "type": "nominal", "title": "Country"},
-                    {"field": "Rate per 100,000 people", "type": "quantitative"}
+                    {"field": "Type", "type": "nominal"},
+                    {"field": "Rate per 100,000 people", "type": "quantitative"},
+                    {"field": "Number of cases", "type":"quantitative"},
+                    {"field": "Year", "type": "quantitative"}
                   ],
                   "strokeWidth": {
                     "condition": [{"selection": "highlight_map", "value": 1}],

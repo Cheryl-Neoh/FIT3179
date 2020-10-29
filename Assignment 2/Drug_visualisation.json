@@ -253,7 +253,7 @@
             "type": "text",
             "size": 15,
             "align": "right",
-            "dx": 410,
+            "dx": 380,
             "dy": 50
           },
           "encoding": {"text": {"field": "description2"}}
@@ -265,7 +265,7 @@
             "align": "right",
             "fontStyle": "italic",
             "fontWeight": "bold",
-            "dx": 410
+            "dx": 380
           },
           "encoding": {"text": {"field": "author2"}}
         }
@@ -362,7 +362,7 @@
         }
       ]
     },
-    {"mark": "text", "width": 100}
+    {"mark": "text", "width": 80}
   ],
   "config": {
     "view": {"stroke": null},
