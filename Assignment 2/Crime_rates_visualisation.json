@@ -1,626 +1,651 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-    "params": [
-      {
-        "name": "Current_State",
-        "value": "Johor",
-        "bind": {
-          "input": "select",
-          "options": [
-            "Johor",
-            "Kedah",
-            "Kelantan",
-            "Kuala Lumpur",
-            "Melaka",
-            "Negeri Sembilan",
-            "Pahang",
-            "Penang",
-            "Perak",
-            "Perlis",
-            "Sabah",
-            "Sarawak",
-            "Selangor",
-            "Terengganu"
-          ],
-          "name": "States: "
-        }
-      },
-      {
-        "name": "Current_Type",
-        "value": "All Crime",
-        "bind": {
-          "input": "select",
-          "options": [
-            "All Crime",
-            "Murder",
-            "Rape",
-            "Robbery",
-            "Harming",
-            "Theft",
-            "Drug addicts",
-            "House break-ins"
-          ],
-          "name": "Type of crime: "
-        }
-      },
-      {
-        "name": "Current_Year",
-        "value": 2017,
-        "bind": {
-          "input": "range",
-          "min": 2017,
-          "max": 2019,
-          "step": 1,
-          "name": "Year: "
-        }
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "params": [
+    {
+      "name": "Current_State",
+      "value": "Johor",
+      "bind": {
+        "input": "select",
+        "options": [
+          "Johor",
+          "Kedah",
+          "Kelantan",
+          "Kuala Lumpur",
+          "Melaka",
+          "Negeri Sembilan",
+          "Pahang",
+          "Penang",
+          "Perak",
+          "Perlis",
+          "Sabah",
+          "Sarawak",
+          "Selangor",
+          "Terengganu"
+        ],
+        "name": "States: "
       }
-    ],
-    "hconcat": [
-      {"mark": "text", "width": 150},
-      {
-        "hconcat": [
-          {
-            "spacing": 110,
-            "vconcat": [
-              {
-                "data": {
-                  "url": "https://cheryl-neoh.github.io/FIT3179/Assignment 2/Data/AllYearCrimeRates.csv"
+    },
+    {
+      "name": "Current_Type",
+      "value": "All Crime",
+      "bind": {
+        "input": "select",
+        "options": [
+          "All Crime",
+          "Murder",
+          "Rape",
+          "Robbery",
+          "Harming",
+          "Theft",
+          "Drug addicts",
+          "House break-ins"
+        ],
+        "name": "Type of crime: "
+      }
+    },
+    {
+      "name": "Current_Year",
+      "value": 2017,
+      "bind": {
+        "input": "range",
+        "min": 2017,
+        "max": 2019,
+        "step": 1,
+        "name": "Year: "
+      }
+    }
+  ],
+  "hconcat": [
+    {"mark": "text", "width": 150},
+    {
+      "hconcat": [
+        {
+          "vconcat": [
+            {
+              "data": {
+                "url": "https://cheryl-neoh.github.io/FIT3179/Assignment 2/Data/AllYearCrimeRates.csv"
+              },
+              "title": {
+                "text": [
+                  "Crime Rates from 2017 to 2019",
+                  "according to States"
+                ],
+                "fontSize": 15,
+                "dy": -10,
+                "dx": -15
+              },
+              "width": 200,
+              "height": 280,
+              "transform": [{"filter": "datum.id == Current_State"}],
+              "encoding": {
+                "x": {
+                  "field": "Year",
+                  "type": "ordinal",
+                  "title": "Year",
+                  "scale": {"domain": [2017, 2018, 2019], "range": [-22, 150]}
                 },
-                "title": {
-                  "text": [
-                    "Crime Rates from 2017 to 2019",
-                    "according to States"
+                "y": {
+                  "field": "Rate per 100,000 people",
+                  "type": "quantitative",
+                  "title": "Rate per 100,000 people"
+                },
+                "color": {
+                  "condition": {
+                    "selection": "highlight_line_chart",
+                    "field": "Type",
+                    "type": "nominal",
+                    "legend": null
+                  },
+                  "value": "grey"
+                },
+                "opacity": {
+                  "condition": {
+                    "selection": "highlight_line_chart",
+                    "value": 1
+                  },
+                  "value": 0.2
+                }
+              },
+              "layer": [
+                {
+                  "selection": {
+                    "zoom_line_chart": {"type": "interval", "bind": "scales"},
+                    "highlight_line_chart": {
+                      "type": "single",
+                      "on": "mouseover",
+                      "empty": "all",
+                      "fields": ["Type"]
+                    }
+                  },
+                  "mark": {
+                    "type": "line",
+                    "strokeWidth": 8,
+                    "stroke": "transparent"
+                  }
+                },
+                {"mark": "line"},
+                {
+                  "encoding": {
+                    "x": {"aggregate": "max", "field": "Year"},
+                    "y": {
+                      "aggregate": {"argmax": "Year"},
+                      "field": "Rate per 100,000 people"
+                    }
+                  },
+                  "layer": [
+                    {"mark": {"type": "circle"}},
+                    {
+                      "mark": {"type": "text", "align": "left", "dx": 4},
+                      "encoding": {"text": {"field": "Type", "type": "nominal"}}
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "data": {
+                "values": [
+                  {
+                    "title": "THIS IS TITLE",
+                    "description": [
+                      "Among the 8 types of robbery, it ",
+                      "has been identified that there",
+                      "were 4 types of robbery that ",
+                      "occurred in Malaysia. Namely,   "
+                    ],
+                    "description1": [
+                      "Gang Robbery with firearms, ",
+                      "Gang Robbery without firearms,",
+                      "Robbery with firearms and",
+                      "Robbery without firearms."
+                    ],
+                    "description2": [
+                      "Crime statistics released by the",
+                      "DOS Malaysia shows that",
+                      "Robberies without firearms are ",
+                      "the most common crime in",
+                      "Malaysia. Only a very small",
+                      "percentage of crimes are by",
+                      "Robberies with firearms."
+                    ]
+                  }
+                ]
+              },
+              "layer": [
+                {
+                  "mark": {
+                    "type": "text",
+                    "size": 15,
+                    "align": "left",
+                    "dy": 40,
+                    "dx": -20
+                  },
+                  "encoding": {"text": {"field": "description"}}
+                },
+                {
+                  "mark": {
+                    "type": "text",
+                    "size": 17,
+                    "align": "left",
+                    "fontWeight": "bold",
+                    "dy": 110,
+                    "dx": -20
+                  },
+                  "encoding": {"text": {"field": "description1"}}
+                },
+                {
+                  "mark": {
+                    "type": "text",
+                    "size": 15,
+                    "align": "left",
+                    "dy": 185,
+                    "dx": -20
+                  },
+                  "encoding": {"text": {"field": "description2"}}
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "vconcat": [
+            {
+              "data": {
+                "url": "https://cheryl-neoh.github.io/FIT3179/Assignment 2/Data/Malaysian-states.json",
+                "format": {"type": "topojson", "feature": "states"}
+              },
+              "width": 700,
+              "height": 350,
+              "selection": {
+                "highlight_map": {
+                  "type": "multi",
+                  "empty": "none",
+                  "on": "mouseover"
+                }
+              },
+              "transform": [
+                {
+                  "lookup": "id",
+                  "from": {
+                    "data": {
+                      "url": "https://cheryl-neoh.github.io/FIT3179/Assignment 2/Data/AllYearCrimeRatesWideFormat.csv"
+                    },
+                    "key": "id",
+                    "fields": [
+                      "2017All CrimeCases",
+                      "2017All CrimeRate",
+                      "2017MurderCases",
+                      "2017MurderRate",
+                      "2017RapeCases",
+                      "2017RapeRate",
+                      "2017RobberyCases",
+                      "2017RobberyRate",
+                      "2017HarmingCases",
+                      "2017HarmingRate",
+                      "2017TheftCases",
+                      "2017TheftRate",
+                      "2017Drug addictsCases",
+                      "2017Drug addictsRate",
+                      "2017House break-insCases",
+                      "2017House break-insRate",
+                      "2018All CrimeCases",
+                      "2018All CrimeRate",
+                      "2018MurderCases",
+                      "2018MurderRate",
+                      "2018RapeCases",
+                      "2018RapeRate",
+                      "2018RobberyCases",
+                      "2018RobberyRate",
+                      "2018HarmingCases",
+                      "2018HarmingRate",
+                      "2018TheftCases",
+                      "2018TheftRate",
+                      "2018Drug addictsCases",
+                      "2018Drug addictsRate",
+                      "2018House break-insCases",
+                      "2018House break-insRate",
+                      "2019All CrimeCases",
+                      "2019All CrimeRate",
+                      "2019MurderCases",
+                      "2019MurderRate",
+                      "2019RapeCases",
+                      "2019RapeRate",
+                      "2019RobberyCases",
+                      "2019RobberyRate",
+                      "2019HarmingCases",
+                      "2019HarmingRate",
+                      "2019TheftCases",
+                      "2019TheftRate",
+                      "2019Drug addictsCases",
+                      "2019Drug addictsRate",
+                      "2019House break-insCases",
+                      "2019House break-insRate"
+                    ]
+                  }
+                },
+                {
+                  "calculate": "datum[Current_Year+Current_Type+'Rate']",
+                  "as": "Rate per 100,000 people"
+                },
+                {
+                  "calculate": "datum[Current_Year+Current_Type+'Cases']",
+                  "as": "Number of cases"
+                },
+                {"calculate": "Current_Year", "as": "Year"},
+                {"calculate": "Current_Type", "as": "Type"}
+              ],
+              "projection": {"type": "equalEarth"},
+              "mark": {
+                "type": "geoshape",
+                "stroke": "#757575",
+                "strokeWidth": 0.8
+              },
+              "encoding": {
+                "color": {
+                  "field": "Rate per 100,000 people",
+                  "type": "quantitative",
+                  "legend": {"orient": "top", "offset": -20}
+                },
+                "tooltip": [
+                  {"field": "id", "type": "nominal", "title": "Country"},
+                  {"field": "Type", "type": "nominal"},
+                  {"field": "Rate per 100,000 people", "type": "quantitative"},
+                  {"field": "Number of cases", "type": "quantitative"},
+                  {"field": "Year", "type": "quantitative"}
+                ],
+                "strokeWidth": {
+                  "condition": [{"selection": "highlight_map", "value": 1}],
+                  "value": 0.3
+                }
+              }
+            },
+            {
+              "spacing": 50,
+              "hconcat": [
+                {
+                  "data": {
+                    "url": "https://cheryl-neoh.github.io/FIT3179/Assignment 2/Data/AllYearCrimeRates.csv"
+                  },
+                  "title": {
+                    "text": [
+                      "Proportion of Crime Rates",
+                      "according to States"
+                    ],
+                    "fontSize": 15,
+                    "dy": -18
+                  },
+                  "width": 50,
+                  "height": 300,
+                  "transform": [
+                    {"filter": "datum.Year == Current_Year"},
+                    {"filter": "datum.Type !== 'All Crime'"},
+                    {"filter": "datum.id == Current_State"},
+                    {
+                      "joinaggregate": [
+                        {"op": "sum", "field": "Total cases", "as": "Total"}
+                      ]
+                    },
+                    {
+                      "calculate": "round(datum['Total cases']/datum.Total * 100)",
+                      "as": "Percentage"
+                    }
                   ],
-                  "fontSize": 15,
-                  "dy": -10,
-                  "dx": -15
-                },
-                "width": 200,
-                "height": 280,
-                "transform": [{"filter": "datum.id == Current_State"}],
-                "encoding": {
-                  "x": {
-                    "field": "Year",
-                    "type": "ordinal",
-                    "title": "Year",
-                    "scale": {"domain": [2017, 2018, 2019], "range": [-22, 150]}
-                  },
-                  "y": {
-                    "field": "Rate per 100,000 people",
-                    "type": "quantitative",
-                    "title": "Rate per 100,000 people"
-                  },
-                  "color": {
-                    "condition": {
-                      "selection": "highlight_line_chart",
-                      "field": "Type",
+                  "layer": [
+                    {
+                      "mark": {
+                        "type": "arc",
+                        "innerRadius": 20,
+                        "stroke": "gray",
+                        "strokeWidth": 1
+                      }
+                    },
+                    {
+                      "selection": {
+                        "highlight_radial": {
+                          "type": "single",
+                          "empty": "none",
+                          "on": "mouseover"
+                        }
+                      },
+                      "mark": {
+                        "type": "text",
+                        "radiusOffset": 20,
+                        "stroke": "black"
+                      },
+                      "encoding": {
+                        "text": {"field": "Rate per 100,000 people"},
+                        "fillOpacity": {
+                          "condition": {
+                            "selection": "highlight_radial",
+                            "value": 1
+                          },
+                          "value": 1
+                        }
+                      }
+                    }
+                  ],
+                  "encoding": {
+                    "theta": {
+                      "field": "Rate per 100,000 people",
+                      "type": "quantitative",
+                      "stack": true
+                    },
+                    "radius": {
+                      "field": "Rate per 100,000 people",
+                      "scale": {
+                        "type": "sqrt",
+                        "zero": true,
+                        "rangeMin": 20,
+                        "range": [1, 120]
+                      }
+                    },
+                    "color": {
+                      "field": "Rate per 100,000 people",
                       "type": "nominal",
                       "legend": null
                     },
-                    "value": "grey"
-                  },
-                  "opacity": {
-                    "condition": {
-                      "selection": "highlight_line_chart",
-                      "value": 1
-                    },
-                    "value": 0.2
+                    "tooltip": [
+                      {"field": "id", "type": "nominal", "title": "State"},
+                      {"field": "Type", "type": "nominal"},
+                      {"field": "Total cases", "type": "quantitative"},
+                      {
+                        "field": "Rate per 100,000 people",
+                        "type": "quantitative"
+                      }
+                    ],
+                    "strokeWidth": {
+                      "condition": [
+                        {"selection": "highlight_radial", "value": 1}
+                      ],
+                      "value": 0.2
+                    }
                   }
                 },
-                "layer": [
-                  {
-                    "selection": {
-                      "zoom_line_chart": {"type": "interval", "bind": "scales"},
-                      "highlight_line_chart": {
-                        "type": "single",
-                        "on": "mouseover",
-                        "empty": "all",
-                        "fields": ["Type"]
-                      }
-                    },
-                    "mark": {
-                      "type": "line",
-                      "strokeWidth": 8,
-                      "stroke": "transparent"
-                    }
+                {
+                  "data": {
+                    "url": "https://cheryl-neoh.github.io/FIT3179/Assignment 2/Data/AllYearCrimeRates.csv"
                   },
-                  {"mark": "line"},
-                  {
-                    "encoding": {
-                      "x": {"aggregate": "max", "field": "Year"},
-                      "y": {
-                        "aggregate": {"argmax": "Year"},
-                        "field": "Rate per 100,000 people"
+                  "width": 125,
+                  "height": 250,
+                  "transform": [
+                    {"filter": "datum.Type == Current_Type"},
+                    {
+                      "calculate": "1*datum['Rate per 100,000 people']",
+                      "as": "Rate"
+                    },
+                    {"calculate": "1*datum['Total cases']", "as": "Total"},
+                    {
+                      "sort": [
+                        {"field": "Rate", "order": "descending"},
+                        {"field": "Total", "order": "descending"}
+                      ],
+                      "window": [{"op": "rank", "as": "Rank"}],
+                      "groupby": ["Year"],
+                      "frame": [null, null]
+                    }
+                  ],
+                  "encoding": {
+                    "x": {"field": "Year", "type": "ordinal"},
+                    "y": {"field": "Rank", "type": "ordinal"}
+                  },
+                  "layer": [
+                    {
+                      "mark": {"type": "line", "strokeWidth": 4},
+                      "selection": {
+                        "highlight_bump": {"type": "multi", "fields": ["id"]}
+                      },
+                      "encoding": {
+                        "color": {"field": "id", "type": "nominal"},
+                        "opacity": {
+                          "condition": {
+                            "selection": "highlight_bump",
+                            "value": 0.8
+                          },
+                          "value": 0.1
+                        }
                       }
                     },
-                    "layer": [
-                      {"mark": {"type": "circle"}},
-                      {
-                        "mark": {"type": "text", "align": "left", "dx": 4},
-                        "encoding": {"text": {"field": "Type", "type": "nominal"}}
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "data": {
-                  "values": [
                     {
-                      "title": "THIS IS TITLE",
-                      "description": [
-                        "wsxddfwqklwjefdddddddddd",
-                        "sdgkdfjgkrwkejrskdfjkedddd",
-                        "wjrtjnsdfskdkfksksdfjekjddd",
-                        "jfkejkjkfjkdsjfskdfjkejkfk",
-                        "fsdfshfkjsdhkfjshkdfhsnddd",
-                        "kwjrtjnsdfskdkfksksdfjekjsad",
-                        "dkwjrtjnsdfskdkfksksdfjekjsad",
-                        "dkwjrtjnsdfskdkfksksdfjekjsad"
-                      ]
+                      "mark": {"type": "rule", "orient": "vertical"},
+                      "selection": {
+                        "highlight_bump_text": {
+                          "type": "single",
+                          "fields": ["Year"],
+                          "nearest": true,
+                          "on": "mouseover",
+                          "empty": "none",
+                          "clear": "mouseout"
+                        }
+                      },
+                      "encoding": {
+                        "color": {"field": "id", "type": "nominal"},
+                        "tooltip": [
+                          {"field": "id", "type": "nominal", "title": "State"},
+                          {"field": "Year", "type": "nominal"},
+                          {"field": "Rank", "type": "nominal", "title": "Rank"}
+                        ],
+                        "opacity": {
+                          "condition": {
+                            "value": 1,
+                            "selection": "highlight_bump_text"
+                          },
+                          "value": 0
+                        }
+                      }
+                    },
+                    {
+                      "mark": {
+                        "type": "circle",
+                        "orient": "vertical",
+                        "size": 100
+                      },
+                      "encoding": {
+                        "color": {
+                          "field": "id",
+                          "type": "nominal",
+                          "legend": null
+                        },
+                        "opacity": {
+                          "condition": {
+                            "selection": "highlight_bump",
+                            "value": 0.8
+                          },
+                          "value": 0.1
+                        }
+                      },
+                      "title": {
+                        "text": ["Most Dangerous States", "by Rank"],
+                        "fontSize": 15,
+                        "offset": 20
+                      }
+                    },
+                    {
+                      "mark": {
+                        "type": "text",
+                        "align": "left",
+                        "dx": 10,
+                        "fontStyle": "italic"
+                      },
+                      "encoding": {
+                        "text": {"field": "id"},
+                        "opacity": {
+                          "condition": {
+                            "selection": "highlight_bump",
+                            "value": 1
+                          },
+                          "value": 0.2
+                        },
+                        "fillOpacity": {
+                          "condition": {
+                            "test": "datum.Year == 2019",
+                            "value": 1
+                          },
+                          "value": 0
+                        }
+                      }
                     }
                   ]
                 },
-                "vconcat": [
-                  {
-                    "mark": {
-                      "type": "text",
-                      "fontWeight": "bold",
-                      "size": 20,
-                      "align": "left"
-                    },
-                    "encoding": {"text": {"field": "title"}}
-                  },
-                  {
-                    "mark": {"type": "text", "size": 15, "align": "left"},
-                    "encoding": {"text": {"field": "description"}}
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "vconcat": [
-              {
-                "data": {
-                  "url": "https://cheryl-neoh.github.io/FIT3179/Assignment 2/Data/Malaysian-states.json",
-                  "format": {"type": "topojson", "feature": "states"}
-                },
-                "width": 700,
-                "height": 350,
-                "selection": {
-                  "highlight_map": {
-                    "type": "multi",
-                    "empty": "none",
-                    "on": "mouseover"
-                  }
-                },
-                "transform": [
-                  {
-                    "lookup": "id",
-                    "from": {
-                      "data": {
-                        "url": "https://cheryl-neoh.github.io/FIT3179/Assignment 2/Data/AllYearCrimeRatesWideFormat.csv"
-                      },
-                      "key": "id",
-                      "fields": [
-                        "2017All CrimeCases",
-                        "2017All CrimeRate",
-                        "2017MurderCases",
-                        "2017MurderRate",
-                        "2017RapeCases",
-                        "2017RapeRate",
-                        "2017RobberyCases",
-                        "2017RobberyRate",
-                        "2017HarmingCases",
-                        "2017HarmingRate",
-                        "2017TheftCases",
-                        "2017TheftRate",
-                        "2017Drug addictsCases",
-                        "2017Drug addictsRate",
-                        "2017House break-insCases",
-                        "2017House break-insRate",
-                        "2018All CrimeCases",
-                        "2018All CrimeRate",
-                        "2018MurderCases",
-                        "2018MurderRate",
-                        "2018RapeCases",
-                        "2018RapeRate",
-                        "2018RobberyCases",
-                        "2018RobberyRate",
-                        "2018HarmingCases",
-                        "2018HarmingRate",
-                        "2018TheftCases",
-                        "2018TheftRate",
-                        "2018Drug addictsCases",
-                        "2018Drug addictsRate",
-                        "2018House break-insCases",
-                        "2018House break-insRate",
-                        "2019All CrimeCases",
-                        "2019All CrimeRate",
-                        "2019MurderCases",
-                        "2019MurderRate",
-                        "2019RapeCases",
-                        "2019RapeRate",
-                        "2019RobberyCases",
-                        "2019RobberyRate",
-                        "2019HarmingCases",
-                        "2019HarmingRate",
-                        "2019TheftCases",
-                        "2019TheftRate",
-                        "2019Drug addictsCases",
-                        "2019Drug addictsRate",
-                        "2019House break-insCases",
-                        "2019House break-insRate"
-                      ]
-                    }
-                  },
-                  {
-                    "calculate": "datum[Current_Year+Current_Type+'Rate']",
-                    "as": "Rate per 100,000 people"
-                  },
-                  {
-                    "calculate": "datum[Current_Year+Current_Type+'Cases']",
-                    "as": "Number of cases"
-                  },
-                  {
-                    "calculate": "Current_Year", "as": "Year"
-                  },
-                  {
-                    "calculate": "Current_Type", "as": "Type"
-                  }
-                ],
-                "projection": {"type": "equalEarth"},
-                "mark": {
-                  "type": "geoshape",
-                  "stroke": "#757575",
-                  "strokeWidth": 0.8
-                },
-                "encoding": {
-                  "color": {
-                    "field": "Rate per 100,000 people",
-                    "type": "quantitative",
-                    "legend": {"orient": "top", "offset": -20}
-                  },
-                  "tooltip": [
-                    {"field": "id", "type": "nominal", "title": "Country"},
-                    {"field": "Type", "type": "nominal"},
-                    {"field": "Rate per 100,000 people", "type": "quantitative"},
-                    {"field": "Number of cases", "type":"quantitative"},
-                    {"field": "Year", "type": "quantitative"}
-                  ],
-                  "strokeWidth": {
-                    "condition": [{"selection": "highlight_map", "value": 1}],
-                    "value": 0.3
-                  }
-                }
-              },
-              {
-                "spacing": 50,
-                "hconcat": [
-                  {
-                    "data": {
-                      "url": "https://cheryl-neoh.github.io/FIT3179/Assignment 2/Data/AllYearCrimeRates.csv"
-                    },
-                    "title": {
-                      "text": [
-                        "Proportion of Crime Rates",
-                        "according to States"
-                      ],
-                      "fontSize": 15,
-                      "dy": 20
-                    },
-                    "width": 50,
-                    "height": 300,
-                    "transform": [
-                      {"filter": "datum.Year == Current_Year"},
-                      {"filter": "datum.Type !== 'All Crime'"},
-                      {"filter": "datum.id == Current_State"},
+                {
+                  "data": {
+                    "values": [
                       {
-                        "joinaggregate": [
-                          {"op": "sum", "field": "Total cases", "as": "Total"}
+                        "author": "- Ashley Tang, Jun 2020",
+                        "description": [
+                          "KL has the highest index crime per ",
+                          "capita than any state in the country,"
+                        ],
+                        "description1": [
+                          "it was reported that one of the factors ",
+                          "that contributed to KL’s crime rate was"
+                        ],
+                        "description2": [
+                          "crowded population, influx of ",
+                          "immigrants, negligence and ",
+                          "carelessness, as well as lack of ",
+                          "security and crime prevention ",
+                          "awareness among residents."
+                        ],
+                        "description3": [
+                          "It was also reported that most crimes",
+                          "were committed by Malaysians rather than ",
+                          "immigrants, where areas with middle ",
+                          "to upper income neighbourhoods are ",
+                          "targeted by criminals."
                         ]
-                      },
-                      {
-                        "calculate": "round(datum['Total cases']/datum.Total * 100)",
-                        "as": "Percentage"
                       }
-                    ],
-                    "layer": [
-                      {
-                        "mark": {
-                          "type": "arc",
-                          "innerRadius": 20,
-                          "stroke": "gray",
-                          "strokeWidth": 1
-                        }
+                    ]
+                  },
+                  "layer": [
+                    {
+                      "mark": {
+                        "type": "text",
+                        "size": 16,
+                        "align": "left",
+                        "dx": -20,
+                        "dy": -40,
+                        "fontWeight": "bolder"
                       },
-                      {
-                        "selection": {
-                          "highlight_radial": {
-                            "type": "single",
-                            "empty": "none",
-                            "on": "mouseover"
-                          }
-                        },
-                        "mark": {
-                          "type": "text",
-                          "radiusOffset": 20,
-                          "stroke": "black"
-                        },
-                        "encoding": {
-                          "text": {"field": "Rate per 100,000 people"},
-                          "fillOpacity": {
-                            "condition": {
-                              "selection": "highlight_radial",
-                              "value": 1
-                            },
-                            "value": 1
-                          }
-                        }
-                      }
-                    ],
-                    "encoding": {
-                      "theta": {
-                        "field": "Rate per 100,000 people",
-                        "type": "quantitative",
-                        "stack": true
+                      "encoding": {"text": {"field": "description"}}
+                    },
+                    {
+                      "mark": {
+                        "type": "text",
+                        "size": 15,
+                        "align": "left",
+                        "dy": -3,
+                        "dx": -20
                       },
-                      "radius": {
-                        "field": "Rate per 100,000 people",
-                        "scale": {
-                          "type": "sqrt",
-                          "zero": true,
-                          "rangeMin": 20,
-                          "range": [1, 120]
-                        }
+                      "encoding": {"text": {"field": "description1"}}
+                    },
+                    {
+                      "mark": {
+                        "type": "text",
+                        "size": 16,
+                        "align": "left",
+                        "dy": 33,
+                        "dx": -20,
+                        "fontWeight": "bold"
                       },
-                      "color": {
-                        "field": "Rate per 100,000 people",
-                        "type": "nominal",
-                        "legend": null
+                      "encoding": {"text": {"field": "description2"}}
+                    },
+                    {
+                      "mark": {
+                        "type": "text",
+                        "size": 15,
+                        "align": "left",
+                        "dx": -20,
+                        "dy": 230,
+                        "fontWeight": "bold",
+                        "fontStyle": "italic"
                       },
-                      "tooltip": [
-                        {"field": "Type", "type": "nominal"},
-                        {"field": "Total cases", "type": "quantitative"},
-                        {
-                          "field": "Rate per 100,000 people",
-                          "type": "quantitative"
-                        }
-                      ],
-                      "strokeWidth": {
-                        "condition": [
-                          {"selection": "highlight_radial", "value": 1}
-                        ],
-                        "value": 0.2
-                      }
+                      "encoding": {"text": {"field": "author"}}
+                    },
+                    {
+                      "mark": {
+                        "type": "text",
+                        "size": 15,
+                        "align": "left",
+                        "dy": 125,
+                        "dx": -20
+                      },
+                      "encoding": {"text": {"field": "description3"}}
                     }
-                  },
-                  {
-                    "data": {
-                      "url": "https://cheryl-neoh.github.io/FIT3179/Assignment 2/Data/AllYearCrimeRates.csv"
-                    },
-                    "width": 125,
-                    "height": 250,
-                    "transform": [
-                      {"filter": "datum.Type == Current_Type"},
-                      {
-                        "calculate": "1*datum['Rate per 100,000 people']",
-                        "as": "Rate"
-                      },
-                      {"calculate": "1*datum['Total cases']", "as": "Total"},
-                      {
-                        "sort": [
-                          {"field": "Rate", "order": "descending"},
-                          {"field": "Total", "order": "descending"}
-                        ],
-                        "window": [{"op": "rank", "as": "Rank"}],
-                        "groupby": ["Year"],
-                        "frame": [null, null]
-                      }
-                    ],
-                    "encoding": {
-                      "x": {"field": "Year", "type": "ordinal"},
-                      "y": {"field": "Rank", "type": "ordinal"}
-                    },
-                    "layer": [
-                      {
-                        "mark": {"type": "line", "strokeWidth": 4},
-                        "selection": {
-                          "highlight_bump": {"type": "multi", "fields": ["id"]}
-                        },
-                        "encoding": {
-                          "color": {"field": "id", "type": "nominal"},
-                          "opacity": {
-                            "condition": {
-                              "selection": "highlight_bump",
-                              "value": 0.8
-                            },
-                            "value": 0.1
-                          }
-                        }
-                      },
-                      {
-                        "mark": {"type": "rule", "orient": "vertical"},
-                        "selection": {
-                          "highlight_bump_text": {
-                            "type": "single",
-                            "fields": ["Year"],
-                            "nearest": true,
-                            "on": "mouseover",
-                            "empty": "none",
-                            "clear": "mouseout"
-                          }
-                        },
-                        "encoding": {
-                          "color": {"field": "id", "type": "nominal"},
-                          "tooltip": [
-                            {"field": "id", "type": "nominal", "title": "State"},
-                            {"field": "Year", "type": "nominal"},
-                            {"field": "Rank", "type": "nominal", "title": "Rank"}
-                          ],
-                          "opacity": {
-                            "condition": {
-                              "value": 1,
-                              "selection": "highlight_bump_text"
-                            },
-                            "value": 0
-                          }
-                        }
-                      },
-                      {
-                        "mark": {
-                          "type": "circle",
-                          "orient": "vertical",
-                          "size": 100
-                        },
-                        "encoding": {
-                          "color": {
-                            "field": "id",
-                            "type": "nominal",
-                            "legend": null
-                          },
-                          "opacity": {
-                            "condition": {
-                              "selection": "highlight_bump",
-                              "value": 0.8
-                            },
-                            "value": 0.1
-                          }
-                        },
-                        "title": {
-                          "text": ["Rank of the most", "dangerous states"],
-                          "fontSize": 15,
-                          "offset": 20
-                        }
-                      },
-                      {
-                        "mark": {
-                          "type": "text",
-                          "align": "left",
-                          "dx": 10,
-                          "fontStyle": "italic"
-                        },
-                        "encoding": {
-                          "text": {"field": "id"},
-                          "opacity": {
-                            "condition": {
-                              "selection": "highlight_bump",
-                              "value": 1
-                            },
-                            "value": 0.2
-                          },
-                          "fillOpacity": {
-                            "condition": {
-                              "test": "datum.Year == 2019",
-                              "value": 1
-                            },
-                            "value": 0
-                          }
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "data": {
-                      "values": [
-                        {
-                          "author": "- Ashley Tang, Jun 2020",
-                          "description": [
-                            "KL has the highest index crime per ",
-                            "capita than any state in the country,"
-                          ],
-                          "description1": [
-                            "it was reported that one of the factors ",
-                            "that contributed to KL’s crime rate was"
-                          ],
-                          "description2": [
-                            "crowded population, influx of ",
-                            "immigrants, negligence and ",
-                            "carelessness, as well as lack of ",
-                            "security and crime prevention ",
-                            "awareness among residents."
-                          ],
-                          "description3": [
-                            "It was also reported that most crimes",
-                            "were committed by Malaysians rather than ",
-                            "immigrants, where areas with middle ",
-                            "to upper income neighbourhoods are ",
-                            "targeted by criminals."
-                          ]
-                        }
-                      ]
-                    },
-                    "layer": [
-                      {
-                        "mark": {
-                          "type": "text",
-                          "size": 16,
-                          "align": "left",
-                          "dx": -20,
-                          "dy": -40,
-                          "fontWeight": "bolder"
-                        },
-                        "encoding": {"text": {"field": "description"}}
-                      },
-                      {
-                        "mark": {
-                          "type": "text",
-                          "size": 15,
-                          "align": "left",
-                          "dy": -3,
-                          "dx": -20
-                        },
-                        "encoding": {"text": {"field": "description1"}}
-                      },
-                      {
-                        "mark": {
-                          "type": "text",
-                          "size": 16,
-                          "align": "left",
-                          "dy": 33,
-                          "dx": -20,
-                          "fontWeight": "bold"
-                        },
-                        "encoding": {"text": {"field": "description2"}}
-                      },
-                      {
-                        "mark": {
-                          "type": "text",
-                          "size": 15,
-                          "align": "left",
-                          "dx": -20,
-                          "dy": 230,
-                          "fontWeight": "bold",
-                          "fontStyle": "italic"
-                        },
-                        "encoding": {"text": {"field": "author"}}
-                      },
-                      {
-                        "mark": {
-                          "type": "text",
-                          "size": 15,
-                          "align": "left",
-                          "dy": 125,
-                          "dx": -20
-                        },
-                        "encoding": {"text": {"field": "description3"}}
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      {"mark": "text", "width": "container"}
-    ],
-    "config": {
-      "background": "HoneyDew",
-      "style": {"cell": {"stroke": "transparent"}},
-      "range": {
-        "heatmap": ["#fee5d9", "#fcae91", "#fb6a4a", "#de2d26", "#a50f15"]
-      }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {"mark": "text", "width": "container"}
+  ],
+  "config": {
+    "background": "HoneyDew",
+    "style": {"cell": {"stroke": "transparent"}},
+    "range": {
+      "heatmap": ["#fee5d9", "#fcae91", "#fb6a4a", "#de2d26", "#a50f15"]
     }
   }
+}
