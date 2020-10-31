@@ -210,69 +210,7 @@
         }
       ]
     },
-    {
-      "data": {
-        "values": [
-          {
-            "author1": "- National Institute on Drug Abuse, April 2020",
-            "description1": [
-              "For most age groups, men have higher rates of use",
-              "or dependence on illicit drugs and alcohol than",
-              "women. However, women are just as likely as men to",
-              "develop a substance use disorder. In addition,",
-              "women may be more susceptible to cravings and",
-              "relapse which are key phases of the addiction cycle."
-            ],
-            "author2": "- Farik Zolkepli, Dec 2018",
-            "description2": [
-              "On 2018, it was reported that there was a high",
-              "usage of drugs among highschool students in",
-              "Malaysia. The number of illicit drugs have",
-              "increased and the syndicates have become",
-              "more creative in catering their customers."
-            ]
-          }
-        ]
-      },
-      "vconcat": [
-        {
-          "mark": {"type": "text", "size": 15, "align": "left", "dy": -55, "dx": -60},
-          "encoding": {"text": {"field": "description1"}}
-        },
-        {
-          "mark": {
-            "type": "text",
-            "size": 15,
-            "align": "left",
-            "fontStyle": "italic",
-            "fontWeight": "bold",
-            "dx": -60
-          },
-          "encoding": {"text": {"field": "author1"}}
-        },
-        {
-          "mark": {
-            "type": "text",
-            "size": 15,
-            "align": "right",
-            "dx": 315,
-            "dy": 50
-          },
-          "encoding": {"text": {"field": "description2"}}
-        },
-        {
-          "mark": {
-            "type": "text",
-            "size": 15,
-            "align": "right",
-            "fontStyle": "italic",
-            "fontWeight": "bold",
-            "dx": 315
-          },
-          "encoding": {"text": {"field": "author2"}}
-        }
-      ]
-    },
+    {"mark": "text", "width": 300},
     {
       "data": {
         "url": "https://cheryl-neoh.github.io/FIT3179/Assignment 2/Data/Education-level of Drug addicts.csv"
