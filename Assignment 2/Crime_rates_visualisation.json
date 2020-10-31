@@ -142,69 +142,7 @@
                 }
               ]
             },
-            {
-              "data": {
-                "values": [
-                  {
-                    "title": "THIS IS TITLE",
-                    "description": [
-                      "Among the 8 types of robbery, it ",
-                      "has been identified that there",
-                      "were 4 types of robbery that ",
-                      "occurred in Malaysia. Namely,   "
-                    ],
-                    "description1": [
-                      "Gang Robbery with firearms, ",
-                      "Gang Robbery without firearms,",
-                      "Robbery with firearms and",
-                      "Robbery without firearms."
-                    ],
-                    "description2": [
-                      "Crime statistics released by the",
-                      "DOS Malaysia shows that",
-                      "Robberies without firearms are ",
-                      "the most common crime in",
-                      "Malaysia. Only a very small",
-                      "percentage of crimes are by",
-                      "Robberies with firearms."
-                    ]
-                  }
-                ]
-              },
-              "layer": [
-                {
-                  "mark": {
-                    "type": "text",
-                    "size": 15,
-                    "align": "left",
-                    "dy": 40,
-                    "dx": -20
-                  },
-                  "encoding": {"text": {"field": "description"}}
-                },
-                {
-                  "mark": {
-                    "type": "text",
-                    "size": 17,
-                    "align": "left",
-                    "fontWeight": "bold",
-                    "dy": 110,
-                    "dx": -20
-                  },
-                  "encoding": {"text": {"field": "description1"}}
-                },
-                {
-                  "mark": {
-                    "type": "text",
-                    "size": 15,
-                    "align": "left",
-                    "dy": 185,
-                    "dx": -20
-                  },
-                  "encoding": {"text": {"field": "description2"}}
-                }
-              ]
-            }
+            {"mark": {"type": "text"}}
           ]
         },
         {
@@ -355,8 +293,7 @@
                       "mark": {
                         "type": "arc",
                         "innerRadius": 20,
-                        "stroke": "gray",
-                        "strokeWidth": 1
+                        "stroke": "white"
                       }
                     },
                     {
@@ -396,7 +333,7 @@
                         "type": "sqrt",
                         "zero": true,
                         "rangeMin": 20,
-                        "range": [1, 120]
+                        "range": [10, 120]
                       }
                     },
                     "color": {
@@ -425,7 +362,7 @@
                   "data": {
                     "url": "https://cheryl-neoh.github.io/FIT3179/Assignment 2/Data/AllYearCrimeRates.csv"
                   },
-                  "width": 125,
+                  "width": 155,
                   "height": 250,
                   "transform": [
                     {"filter": "datum.Type == Current_Type"},
