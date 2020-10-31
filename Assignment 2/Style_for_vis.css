@@ -32,4 +32,21 @@ body {background-color:HoneyDew;}
       padding: 3px;
       text-align: center;
       color: white;
+      font-family: sans-serif;
+    }
+
+    .part1{
+      position: absolute;
+      left: 220px;
+      top: 670px;
+      font-family: sans-serif;
+      font-size: 13px;
+    }
+
+    .part2{
+      position: absolute;
+      left: 1100px;
+      top: 640px;
+      font-family: sans-serif;
+      font-size: 13px;
     }
