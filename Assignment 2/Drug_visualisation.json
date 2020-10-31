@@ -210,7 +210,6 @@
               ]
             }
           ]
-<<<<<<< HEAD
         },
         {"mark": "text", "width":420},
         {
@@ -223,32 +222,6 @@
             "text": ["Relationship of Education level", "with Drug Addiction"],
             "fontSize": 15,
             "dy": 40
-=======
-        }
-      ]
-    },
-    {"mark": "text", "width": 800},
-    {
-      "data": {
-        "url": "https://cheryl-neoh.github.io/FIT3179/Assignment 2/Data/Education-level of Drug addicts.csv"
-      },
-      "width": 300,
-      "height": 300,
-      "title": {
-        "text": ["Relationship of Education level", "with Drug Addiction"],
-        "fontSize": 15,
-        "dy": 40
-      },
-      "layer": [
-        {
-          "transform": [{"filter": "datum.Year == Current_Year"}],
-          "mark": {
-            "type": "arc",
-            "radius": 100,
-            "radius2": 70,
-            "cornerRadius": 5,
-            "padAngle": 0.02
->>>>>>> 8b638fa9d4789dd77dabb4137039356638854d1d
           },
           "layer": [
             {
