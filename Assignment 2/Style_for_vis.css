@@ -5,9 +5,11 @@ body {background-color:HoneyDew;}
       text-align: center;
       background: #64c2af;
       color: white;
+      height: 66px;
     }
 
     p.dashed{
+      position: absolute;
       border-style: dashed;
       padding: 15px;
       font-family: 	Georgia, 'Times New Roman', Times, serif;
@@ -66,4 +68,63 @@ body {background-color:HoneyDew;}
       font-family: sans-serif;
       font-size: 13px;
       text-align: right;
+    }
+
+    .twintower{
+      width: 20%;
+    }
+
+    .twintowerp{
+      position: absolute;
+      left: 330px;
+      top: -5px;
+    }
+
+    .robber{
+      width: 18%;
+    }
+
+    .robberp{
+      position: absolute;
+      left: 225px;
+      top: 570px;
+    }
+
+    .money{
+      width: 14%;
+    }
+
+    .moneyp{
+      position: absolute;
+      left: 270px;
+      top: 595px;
+    }
+
+    .cuff{
+      width: 25%;
+    }
+
+    .cuffp{
+      position: absolute;
+      left: 1160px;
+      top: 515px;
+    }
+    .inject{
+      width: 19%;
+    }
+
+    .injectp{
+      position: absolute;
+      left: 970px;
+      top: 1200px;
+    }
+
+    .pills{
+      width: 19%;
+    }
+
+    .pillsp{
+      position: absolute;
+      left: 670px;
+      top: 1380px;
     }
