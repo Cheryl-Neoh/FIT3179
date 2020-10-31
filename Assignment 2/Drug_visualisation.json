@@ -210,7 +210,7 @@
         }
       ]
     },
-    {"mark": "text", "width": 300},
+    {"mark": "text", "width": 800},
     {
       "data": {
         "url": "https://cheryl-neoh.github.io/FIT3179/Assignment 2/Data/Education-level of Drug addicts.csv"
