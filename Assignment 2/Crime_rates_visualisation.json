@@ -362,7 +362,7 @@
                   "data": {
                     "url": "https://cheryl-neoh.github.io/FIT3179/Assignment 2/Data/AllYearCrimeRates.csv"
                   },
-                  "width": 155,
+                  "width": 170,
                   "height": 250,
                   "transform": [
                     {"filter": "datum.Type == Current_Type"},
