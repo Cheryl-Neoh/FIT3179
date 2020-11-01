@@ -40,7 +40,7 @@ body {background-color:HoneyDew;}
     .part1{
       position: absolute;
       left: 220px;
-      top: 670px;
+      top: 720px;
       font-family: sans-serif;
       font-size: 13px;
     }
@@ -87,7 +87,7 @@ body {background-color:HoneyDew;}
     .robberp{
       position: absolute;
       left: 225px;
-      top: 570px;
+      top: 620px;
     }
 
     .money{
@@ -97,7 +97,7 @@ body {background-color:HoneyDew;}
     .moneyp{
       position: absolute;
       left: 270px;
-      top: 595px;
+      top: 650px;
     }
 
     .cuff{
