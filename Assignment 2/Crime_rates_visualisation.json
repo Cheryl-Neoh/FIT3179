@@ -333,7 +333,7 @@
                         "type": "sqrt",
                         "zero": true,
                         "rangeMin": 20,
-                        "range": [10, 120]
+                        "range": [10, 130]
                       }
                     },
                     "color": {
@@ -363,7 +363,7 @@
                     "url": "https://cheryl-neoh.github.io/FIT3179/Assignment 2/Data/AllYearCrimeRates.csv"
                   },
                   "width": 170,
-                  "height": 250,
+                  "height": 260,
                   "transform": [
                     {"filter": "datum.Type == Current_Type"},
                     {
